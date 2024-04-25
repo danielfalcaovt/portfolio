@@ -1,0 +1,17 @@
+#presentation {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: #050505 url('./bg.jpg') no-repeat center center/cover;
+  box-shadow: inset 0px 0px 3px 2px #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+#presentation h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Joti One", serif;
+}

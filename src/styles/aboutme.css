@@ -1,0 +1,76 @@
+/* 
+aboutme-main
+developerphoto 
+*/
+
+#aboutme {
+  background: #08000D;
+  border: 0px;
+  border-bottom:  1px solid #8000D2;
+  height: 100vh;
+  width: 98.5vw;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+}
+
+#aboutme-main {
+  position: relative;
+  grid-area: 1/2/1/2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutme-text {
+  max-width: 600px;
+  z-index: 10;
+  height: 50vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#aboutme-text div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#aboutme-text h1 {
+  font-size: 3rem;
+}
+
+#aboutme-text h2 {
+  grid-area: 2/1/2/1;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+#developerphoto {
+  background: #18002B url('./deenedev.jpg') center center/cover;
+}
+
+#aboutme-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom-left-radius: 25px;
+  background: #18002B;
+  border: 1px solid #8000D2;
+  border-top: 0px;
+  border-right: 0px;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+#aboutme-button>h1{
+  font-weight: 200;
+  color: #8000D2;
+}
+
+#developerphoto {
+  grid-area: 1/1/1/2;
+  border-right: 1px solid #8000D2;
+}
