@@ -25,9 +25,9 @@ export default function Aboutme () {
 
   return (
     <>
-      <article id="aboutme">
-        <section id='developerphoto'></section>
-        <section id='aboutme-main'>
+      <section id="aboutme">
+        <article id='developerphoto'></article>
+        <article id='aboutme-main'>
           <div id='aboutme-button'>
             <h1>ABOUT</h1>
           </div>
@@ -39,8 +39,8 @@ export default function Aboutme () {
               <h2>I’m Daniel Falcão, a fullstack developer from Rio de Janeiro, Brazil and a technology lover. I’ll bring you my expertise developing next-level websites and web applications</h2>
             </div>
           </div>
-        </section>
-      </article>
+        </article>
+      </section>
     </>
   )
 }

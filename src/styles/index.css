@@ -9,12 +9,12 @@
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar-track {
-  background: black;
-  color: black;
-  width: 5px;
+html::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: linear-gradient(0deg, #8000D2, #2B2BC2);
 }
 
-::-webkit-scrollbar-corner {
-  width: 5px;
-} 
+html::-webkit-scrollbar {
+  width: 8px;
+  background-color: #08000D;
+}

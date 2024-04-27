@@ -6,9 +6,9 @@ developerphoto
 #aboutme {
   background: #08000D;
   border: 0px;
-  border-bottom:  1px solid #8000D2;
+  border-bottom:  1px solid rgba(255, 255, 255, 0.151);
   height: 100vh;
-  width: 98.5vw;
+  width: 100%;
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -48,9 +48,6 @@ developerphoto
   font-size: 1.7rem;
 }
 
-#developerphoto {
-  background: #18002B url('./deenedev.jpg') center center/cover;
-}
 
 #aboutme-button {
   position: absolute;
@@ -66,11 +63,12 @@ developerphoto
 }
 
 #aboutme-button>h1{
-  font-weight: 200;
+  font-weight: 300;
   color: #8000D2;
 }
 
 #developerphoto {
   grid-area: 1/1/1/2;
-  border-right: 1px solid #8000D2;
+  border-right: 1px solid rgba(255, 255, 255, 0.151);
+  background: #18002B url('./deenedev.jpg') center center/cover;
 }

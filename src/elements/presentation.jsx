@@ -5,9 +5,9 @@ import '../styles/presentation.css'
 export default function Presentation () {
   return (
     <>
-      <article id='presentation'>
+      <section id='presentation'>
         <h1 draggable>deenedev</h1>
-      </article>
+      </section>
     </>
   )
 }

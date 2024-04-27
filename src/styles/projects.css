@@ -1,3 +1,9 @@
+
+#projects-container>h1 {
+  font-size: 3rem;
+  color: white;
+}
+
 #projects-container {
   background: #08000D;
   height: 120vh;
@@ -6,7 +12,14 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 98.3vw;
+  width: 100%;
+}
+
+#projects-container hr {
+  height: 1px;
+  border: 0px;
+  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.151), transparent);
+  width: 100%;
 }
 
 #projects-button {
@@ -37,7 +50,7 @@
 }
 
 #projects-button>h1{
-  font-weight: 400;
+  font-weight: 300;
   color: #8000D2;
 }
 
@@ -49,22 +62,15 @@
   align-items: center;
 }
 
-#projects-container>h1 {
-  font-size: 3rem;
-  color: white;
-}
-
 .project-box {
-  box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.363);
   height: 320px;
   width: 270px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 0px 15px;
   transition: all 0.3s;
-  cursor: pointer;
   overflow: hidden;
 }
 
