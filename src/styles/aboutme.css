@@ -70,5 +70,4 @@ developerphoto
 #developerphoto {
   grid-area: 1/1/1/2;
   border-right: 1px solid rgba(255, 255, 255, 0.151);
-  background: #18002B url('./deenedev.jpg') center center/cover;
 }
