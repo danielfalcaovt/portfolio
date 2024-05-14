@@ -71,3 +71,34 @@ developerphoto
   grid-area: 1/1/1/2;
   border-right: 1px solid rgba(255, 255, 255, 0.151);
 }
+
+@media screen and (max-width: 900px) {
+  #aboutme {
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+  }
+  #developerphoto {
+    height: 40%;
+    width: 100%;
+    background-position: top center;
+  }
+  #aboutme-main {
+    height: 60%;
+  }
+  #aboutme-button {
+    padding: 10px;
+  }
+  #aboutme-button>h1 {
+    font-size: 1.4rem;
+  }
+  #aboutme-text {
+    margin: 0px 15px;
+  }
+  #aboutme-text h1 {
+    font-size: 2.3rem;
+  }
+  #aboutme-text h2 {
+    font-size: 1.3rem;
+  }
+}

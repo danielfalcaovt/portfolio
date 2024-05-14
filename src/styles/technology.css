@@ -12,6 +12,7 @@
 }
 
 #technology-title>h1{
+  height: 30vh;
   font-size: 3rem;
   color: white;
 }
@@ -21,7 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: max-content;
-  padding: 15vh 0px;
+  padding-bottom: 15vh;
 }
 
 #technology-box a {
@@ -109,4 +110,20 @@
   justify-content: center;
   font-weight: 800;
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 130px;
+    height: 194px;
+  }
+  #technology-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #technology-title>h1 {
+    font-size: 2.3rem;
+    margin: 15px;
+  }
 }

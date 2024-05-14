@@ -100,3 +100,38 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media screen and (max-width: 900px) {
+  #projects-container {
+    height: max-content;
+  }
+  #projects-title {
+    height: 150px;
+  }
+  #projects-button {
+    height: 40px;
+    padding: 5px;
+  }
+  #projects-title>h1 {
+    font-size: 2rem;
+    margin: 15px;
+  }
+  #projects {
+    flex-wrap: wrap;
+    height: max-content;
+    padding: 15px 0px;
+  }
+  .project-box {
+    width: 140px;
+    height: 194px;
+    padding: 0px;
+    margin: 5px;
+  }
+  .project-box h1 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .project-box p {
+    font-size: 0.5rem;
+  }
+}
