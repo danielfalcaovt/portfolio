@@ -19,7 +19,7 @@ export default function Projects () {
             <div key={project.id} className='project-box'>
               <div
                 style={{
-                  background: `#08000D url('./projects/${project.bg}') no-repeat left center/cover`
+                  background: `#08000D url('./assets/${project.bg}') no-repeat left center/cover`
                 }}
                 className={`project-bg box${project.id}`}
               >
