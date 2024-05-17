@@ -1,0 +1,43 @@
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  height: 15vh;
+  width: 100vw;
+  top: 0px;
+}
+
+#navbar {
+  display: flex;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0px 25px;
+  width: 90%;
+  align-items: center;
+}
+
+#navbar span {
+  color:#c25fff;
+}
+
+#navbar h1 {
+  color: white;
+}
+
+#navbar-link {
+  width: 20vw;
+}
+
+#navbar-link>ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar-link a {
+  color: white;
+}
