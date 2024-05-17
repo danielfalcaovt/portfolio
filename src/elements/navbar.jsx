@@ -24,15 +24,22 @@ export default function Navbar () {
         <div id='navbar-link'>
           <ul>
             <li>
-              <a href="#aboutme" title="ABOUTME">
+              <a href="#aboutme">
                 ABOUT
+                <hr/>
               </a>
             </li>
             <li>
-              <a href="#projects">PROJECTS</a>
+              <a href="#projects">
+                PROJECTS
+                <hr/>
+              </a>
             </li>
             <li>
-              <a href="#technology">TECHNOLOGY</a>
+              <a href="#technology">
+                TECHNOLOGY
+                <hr/>
+              </a>
             </li>
           </ul>
         </div>

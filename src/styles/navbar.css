@@ -52,6 +52,18 @@ header {
   color: white;
 }
 
+#navbar-link a hr {
+  visibility: hidden;
+  height: 1px;
+  border: 0px;
+  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.514), transparent);
+  width: 100%;
+}
+
+#navbar-link a:hover hr {
+  visibility: visible;
+}
+
 @media screen and (max-width: 900px)  {
   #navbar h1 {
     font-size: 1rem;
