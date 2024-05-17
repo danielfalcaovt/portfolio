@@ -10,7 +10,7 @@ export default function Footer () {
       <div id='logo'>
         <img
         onClick={() => {
-          window.location.reload()
+          window.scroll({ top: 0, left: 0, behavior: 'auto' })
         }}
         src='./favicon.ico'/>
       </div>

@@ -1,8 +1,3 @@
-/* 
-aboutme-main
-developerphoto 
-*/
-
 #aboutme {
   background: #08000D;
   border: 0px;
@@ -40,6 +35,7 @@ developerphoto
 
 #aboutme-text h1 {
   font-size: 3rem;
+  transition: all 0.3s;
 }
 
 #aboutme-text h2 {

@@ -1,26 +1,32 @@
 /* eslint-disable no-unused-vars */
 
 import React, { useEffect, useState } from 'react'
-import $ from 'jquery'
 import '../styles/aboutme.css'
 
 export default function Aboutme () {
-  const [thingAboutMe, setThing] = useState()
-  let randomNum = Math.floor(Math.random() * myFunctions.length)
+  const [textState, setTextState] = useState({ opacity: 100 })
+  const myFunctions = [
+    'Pianist',
+    'Globetrotter',
+    'Aquaman',
+    'Problem Solver',
+    'Coffeeholic',
+    'Developer'
+  ]
+  const [functionExibida, setFuncaoExibida] = useState(myFunctions[0])
 
-  function handleThingAboutMe () {
-    randomNum = Math.floor(Math.random() * myFunctions.length)
-    setThing(myFunctions[randomNum])
-  }
   useEffect(() => {
-    setThing(myFunctions[randomNum])
+    let pos = 0
     setInterval(() => {
-      $('#aboutme-text h1').fadeOut()
+      setTextState({ opacity: 100 })
+      setFuncaoExibida(myFunctions[pos++])
+      if (pos === 6) {
+        pos = 0
+      }
       setTimeout(() => {
-        handleThingAboutMe()
-        $('#aboutme-text h1').fadeIn()
-      }, 2000)
-    }, 7000)
+        setTextState({ opacity: 0 })
+      }, 3000)
+    }, 5000)
   }, [])
 
   return (
@@ -33,7 +39,7 @@ export default function Aboutme () {
           </div>
           <div id='aboutme-text'>
             <div>
-              <h1>{thingAboutMe}</h1>
+              <h1 style={textState}>{functionExibida}</h1>
             </div>
             <div>
               <h2>I’m Daniel Falcão, a fullstack developer from Rio de Janeiro, Brazil and a technology lover. I’ll bring you my expertise developing next-level websites and web applications</h2>
@@ -44,12 +50,3 @@ export default function Aboutme () {
     </>
   )
 }
-
-const myFunctions = [
-  'Pianist',
-  'Globetrotter',
-  'Aquaman',
-  'Problem Solver',
-  'Coffeeholic',
-  'Developer'
-]
