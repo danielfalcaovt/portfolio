@@ -1,24 +1,10 @@
 /* eslint-disable no-unused-vars */
 
 import React from 'react'
-import $ from 'jquery'
 import '../styles/projects.css'
 import { allProjects } from '../data/projects'
 
 export default function Projects () {
-  function handleMouseEnter (target) {
-    $(`.box${target}>.project-about`).fadeIn().css('display', 'flex')
-    $(`.box${target}>a>h1`).fadeIn()
-    $(`.box${target}>a>p`).fadeIn()
-  }
-
-  function handleMouseLeave (target) {
-    console.log(target)
-    $(`.box${target}>.project-about`).fadeOut()
-    $(`.box${target}>a>h1`).fadeOut()
-    $(`.box${target}>a>p`).fadeOut()
-  }
-
   return (
     <section id='projects-container'>
       <div id='projects-title'>
@@ -34,12 +20,6 @@ export default function Projects () {
               <div
                 style={{
                   background: `#08000D url('./projects/${project.bg}') no-repeat left center/cover`
-                }}
-                onMouseEnter={() => {
-                  handleMouseEnter(project.id)
-                }}
-                onMouseLeave={() => {
-                  handleMouseLeave(project.id)
                 }}
                 className={`project-bg box${project.id}`}
               >
