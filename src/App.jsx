@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Aboutme from './elements/aboutme'
 import Presentation from './elements/presentation'
 import Projects from './elements/projects'

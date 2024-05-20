@@ -15,7 +15,7 @@ export default function Aboutme () {
   ]
   const [functionExibida, setFuncaoExibida] = useState(myFunctions[0])
 
-  useEffect(() => {
+  function changeAboutMeCuriosity () {
     let pos = 0
     setInterval(() => {
       setTextState({ opacity: 100 })
@@ -27,6 +27,10 @@ export default function Aboutme () {
         setTextState({ opacity: 0 })
       }, 3000)
     }, 5000)
+  }
+
+  useEffect(() => {
+    changeAboutMeCuriosity()
   }, [])
 
   return (
@@ -34,7 +38,7 @@ export default function Aboutme () {
       <section id="aboutme">
         <article style={{ backgroundColor: '#18002B', backgroundImage: 'url("/deenedev.jpg")', backgroundSize: 'cover', backgroundPosition: 'center center' }} id='developerphoto'></article>
         <article id='aboutme-main'>
-          <div className='button'>
+          <div draggable className='button'>
             <h1>ABOUT</h1>
           </div>
           <div id='aboutme-text'>

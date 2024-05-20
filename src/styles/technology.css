@@ -13,15 +13,18 @@
 
 #technology-title>h1{
   height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 3rem;
   color: white;
 }
 
 #technologies {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   height: max-content;
+  transition: all 0.3s;
   padding-bottom: 15vh;
 }
 
@@ -110,6 +113,29 @@
   justify-content: center;
   font-weight: 800;
   font-size: 1.5em;
+}
+
+.moving-arrow-tech {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 50;
+  cursor: pointer;
+}
+
+#left-arrow {
+  color: #000000;
+  top: 53.5%;
+  left: 15px;
+}
+
+#right-arrow {
+  top: 53.5%;
+  right: 15px;
+}
+
+.invisible {
+  opacity: 0;
 }
 
 @media screen and (max-width: 900px) {
