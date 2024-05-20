@@ -34,7 +34,7 @@ export default function Aboutme () {
       <section id="aboutme">
         <article style={{ backgroundColor: '#18002B', backgroundImage: 'url("/deenedev.jpg")', backgroundSize: 'cover', backgroundPosition: 'center center' }} id='developerphoto'></article>
         <article id='aboutme-main'>
-          <div id='aboutme-button'>
+          <div className='button'>
             <h1>ABOUT</h1>
           </div>
           <div id='aboutme-text'>

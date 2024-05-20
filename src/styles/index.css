@@ -18,3 +18,22 @@ html::-webkit-scrollbar {
   width: 8px;
   background-color: #08000D;
 }
+
+.button {
+  border-radius: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background: #18002B;
+  border: 1px solid #8000D2;
+  padding: 10px;
+}
+
+.button>h1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  filter: drop-shadow(0px 0px 3px #8000D2);
+  color: #b23afc;
+}

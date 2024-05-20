@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #aboutme-text {
@@ -42,25 +43,6 @@
   grid-area: 2/1/2/1;
   font-weight: 300;
   font-size: 1.7rem;
-}
-
-
-#aboutme-button {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  border-bottom-left-radius: 25px;
-  background: #18002B;
-  border: 1px solid #8000D2;
-  border-top: 0px;
-  border-right: 0px;
-  padding: 15px;
-  font-size: 1.5rem;
-}
-
-#aboutme-button>h1{
-  font-weight: 300;
-  color: #8000D2;
 }
 
 #developerphoto {

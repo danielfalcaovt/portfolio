@@ -22,19 +22,6 @@
   width: 100%;
 }
 
-#projects-button {
-  border-radius: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  background: #18002B;
-  border: 1px solid #8000D2;
-  padding: 10px;
-  font-size: 0.8rem;
-}
-
 #projects-title{
   color: white;
   display: flex;
@@ -47,11 +34,6 @@
 #projects-title>h1 {
   margin-top: 25px;
   font-size: 3rem;
-}
-
-#projects-button>h1{
-  font-weight: 300;
-  color: #8000D2;
 }
 
 #projects {
