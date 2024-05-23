@@ -43,7 +43,7 @@ export default function Aboutme () {
           </div>
           <div id='aboutme-text'>
             <div>
-              <h1 style={textState}>{functionExibida}</h1>
+              <h1 style={textState} draggable>{functionExibida}</h1>
             </div>
             <div>
               <h2>I’m Daniel Falcão, a fullstack developer from Rio de Janeiro, Brazil and a technology lover. I’ll bring you my expertise developing next-level websites and web applications</h2>

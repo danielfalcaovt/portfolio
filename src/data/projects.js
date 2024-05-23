@@ -1,10 +1,10 @@
 export const allProjects = [
   {
     id: 1,
-    name: 'Gestor de Alunos',
-    type: 'Web App',
+    name: 'Students Manager',
+    type: 'Local Web App',
     bg: 'project1.png',
-    link: 'https://www.youtube.com/watch?v=mVQNrQVGPrk&ab_channel=deenedev',
+    link: 'https://github.com/danielfalcaovt/GestorDeAlunos-Frontend',
     github: 'https://github.com/danielfalcaovt/GestorDeAlunos-Backend',
     video: 'https://www.youtube.com/watch?v=mVQNrQVGPrk&ab_channel=deenedev'
   },
@@ -18,18 +18,10 @@ export const allProjects = [
   },
   {
     id: 3,
-    name: 'HOME PAGE',
-    type: 'Static Page',
+    name: 'Task Manager',
+    type: 'Website',
     bg: 'project3.png',
-    link: 'https://home-page-blue-omega.vercel.app/',
-    github: ''
-  },
-  {
-    id: 4,
-    name: 'LOGIN PAGE',
-    type: 'Static Page',
-    bg: 'project4.png',
-    link: 'https://login-page-6p8kpetsd-danielfalcaovts-projects.vercel.app/',
-    github: ''
+    link: '',
+    github: 'https://github.com/danielfalcaovt/TaskManager-BACKEND'
   }
 ]

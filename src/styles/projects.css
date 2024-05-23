@@ -87,7 +87,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.project-anchor img {
+  overflow: hidden;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.project-anchor img:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 900px) {
