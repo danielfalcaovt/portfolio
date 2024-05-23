@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-#technology-title>h1{
+#technology-title>h1 {
   height: 30vh;
   display: flex;
   align-items: center;
@@ -26,6 +26,7 @@
   height: max-content;
   transition: all 0.3s;
   padding-bottom: 15vh;
+  flex-wrap: wrap;
 }
 
 #technology-box a {
@@ -46,7 +47,6 @@
   height: 254px;
   color: #fff;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .card:hover .content {
@@ -115,40 +115,32 @@
   font-size: 1.5em;
 }
 
-.moving-arrow-tech {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  z-index: 50;
-  cursor: pointer;
-}
-
-#left-arrow {
-  color: #000000;
-  top: 53.5%;
-  left: 15px;
-}
-
-#right-arrow {
-  top: 53.5%;
-  right: 15px;
-}
-
-.invisible {
-  opacity: 0;
+.content a {
+  cursor: default;
 }
 
 @media screen and (max-width: 900px) {
   .card {
-    width: 130px;
-    height: 194px;
+    width: calc(190px/2);
+    height: calc(254px/2);
   }
+
+  .card span {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
   #technology-title {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   #technology-title>h1 {
     font-size: 2.3rem;
+  }
+
+  .card:hover .content {
+    transform: translateY(-5px);
   }
 }

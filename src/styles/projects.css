@@ -93,6 +93,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s;
+  height: 50px;
 }
 
 .project-anchor img:hover {
@@ -130,5 +131,8 @@
   }
   .project-box p {
     font-size: 0.5rem;
+  }
+  .project-anchor img {
+    height: 40px;
   }
 }
