@@ -21,7 +21,7 @@ export const allProjects = [
     name: 'Task Manager',
     type: 'Website',
     bg: 'project3.png',
-    link: '',
+    link: 'https://github.com/danielfalcaovt/TaskManager',
     github: 'https://github.com/danielfalcaovt/TaskManager-BACKEND'
   }
 ]
