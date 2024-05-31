@@ -9,15 +9,43 @@ import Technology from './elements/technology'
 import Navbar from './elements/navbar'
 
 function App () {
+  const [loading, setLoading] = useState(true)
+  const [loadingAnimation, setLoadingAnimation] = useState({})
+
+  function finishLoad () {
+    setLoading(false)
+  }
+
+  function handleAnimation () {
+    setLoadingAnimation({ transform: 'scale(0)' })
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      finishLoad()
+    }, 800)
+    setTimeout(() => {
+      handleAnimation()
+    }, 500)
+  }, [])
+
   return (
-    <main>
-      <Navbar />
-      <Presentation />
-      <Aboutme />
-      <Projects />
-      <Technology />
-      <Footer />
-    </main>
+    <>
+      {loading
+        ? <div className='loading-container'>
+        <div style={loadingAnimation} className='loading'>
+        </div>
+      </div>
+        : ''}
+      <main>
+        <Navbar />
+        <Presentation />
+        <Aboutme />
+        <Projects />
+        <Technology />
+        <Footer />
+      </main>
+    </>
   )
 }
 
