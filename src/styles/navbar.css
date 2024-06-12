@@ -22,7 +22,7 @@ header {
 }
 
 #navbar span {
-  color:#c25fff;
+  color: #c25fff;
 }
 
 #navbar h1 {
@@ -64,17 +64,106 @@ header {
   visibility: visible;
 }
 
-@media screen and (max-width: 900px)  {
+#phone-nav-link {
+  display: none;
+}
+
+#phone-menu {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
   #navbar h1 {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  #navbar {
-    justify-content: center;
+  #close-phone-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
   }
+  #phone-menu {
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    transition: all 0.3s;
+    z-index: 20;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #08000dcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #phone-menu>ul {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #phone-menu>ul>li {
+    width: 100%;
+    position: relative;
+  }
+
+  #phone-menu>ul>li a {
+    width: 100%;
+    display: block;
+    color: #ffffffe5;
+    font-size: 2rem;
+    transition: all 0.3s;
+    transform-origin: 0%;
+  }
+
+  #phone-menu>ul>li a:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+
+  #phone-menu hr {
+    margin: 10px 0px;
+    width: 100%;
+  }
+
+  #navbar {
+    justify-content: space-between;
+  }
+
   #navbar-link {
     display: none;
+  }
+
+  #phone-nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    cursor: pointer;
+    height: 35px;
+  }
+
+  #phone-nav-link>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #hamburguer-navlink>div {
+    background: white;
+    width: 100%;
+    height: 3px;
+    border-radius: 25px;
   }
 }
