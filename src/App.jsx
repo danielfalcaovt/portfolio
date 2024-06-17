@@ -21,12 +21,10 @@ function App () {
   }
 
   useEffect(() => {
+    handleAnimation()
     setTimeout(() => {
       finishLoad()
-    }, 800)
-    setTimeout(() => {
-      handleAnimation()
-    }, 500)
+    }, 300);
   }, [])
 
   return (
