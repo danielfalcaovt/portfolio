@@ -1,8 +1,17 @@
+@keyframes text-animation {
+  0% {
+    transform: scale(1);
+  } 50% {
+    transform: scale(1.05);
+  } 100% {
+    transform: scale(1);
+  }
+}
+
 #presentation {
   position: sticky;
   top: 0;
   height: 100vh;
-  box-shadow: inset 0px 0px 3px 2px #050505;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,4 +22,9 @@
   color: white;
   font-size: 3rem;
   font-family: "Joti One", serif;
+  text-shadow:
+   3px 3px #c25fff,
+   5px 5px blue;
+  filter: drop-shadow(2px 2px 5px black);
+  animation: text-animation ease-in-out infinite 4s;
 }
