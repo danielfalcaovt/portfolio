@@ -13,7 +13,6 @@ header {
   display: flex;
   border: 1px solid transparent;
   border-radius: 50px;
-  backdrop-filter: blur(10px);
   transition: all 0.5s;
   justify-content: space-between;
   height: 10vh;
@@ -28,6 +27,7 @@ header {
 
 #navbar h1 {
   cursor: pointer;
+  transition: all 0.3s;
   color: white;
 }
 
@@ -54,15 +54,16 @@ header {
 }
 
 #navbar-link a hr {
-  visibility: hidden;
+  opacity: 0;
   height: 1px;
   border: 0px;
   background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.514), transparent);
   width: 100%;
+  transition: all 0.3s;
 }
 
 #navbar-link a:hover hr {
-  visibility: visible;
+  opacity: 1;
 }
 
 #phone-nav-link {

@@ -9,8 +9,9 @@ export default function Navbar () {
     if (window.scrollY !== 0) {
       setHeaderStyle({
         background: '#18002b8a',
-        borderRadius: '50px',
-        border: '1px solid #ffffff27'
+        borderRadius: '50px', 
+        border: '1px solid #ffffff27',
+        backdropFilter: 'blur(10px)'
       })
     } else {
       setHeaderStyle({})
