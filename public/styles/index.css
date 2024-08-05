@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: 'Joti One';
+  src: url('../fonts/JotiOne-Regular.ttf');
+}
 
 * {
   padding: 0px;
