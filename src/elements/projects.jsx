@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 
 import React from 'react'
-import '../styles/projects.css'
 import { allProjects } from '../data/projects'
 
 export default function Projects () {

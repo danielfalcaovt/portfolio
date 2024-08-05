@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 
 import React, { useEffect, useState } from 'react'
-import '../styles/aboutme.css'
 
 export default function Aboutme () {
   const [textState, setTextState] = useState({ opacity: 100 })

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../styles/navbar.css'
 
 export default function Navbar () {
   const [headerStyle, setHeaderStyle] = useState()

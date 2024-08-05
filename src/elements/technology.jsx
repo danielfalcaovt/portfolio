@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/technology.css'
 import { allTechnologies } from '../data/technologies'
 
 export default function Technology () {
