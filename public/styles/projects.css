@@ -102,7 +102,7 @@
 
 @media screen and (max-width: 900px) {
   #projects-container {
-    height: max-content;
+    height: 120vh;
   }
   #projects-title {
     height: 150px;

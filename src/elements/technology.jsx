@@ -11,7 +11,7 @@ export default function Technology () {
         <div id='technologies'>
           {allTechnologies.map((tech) => {
             return (
-              <div key={tech.id} className='card' id='technology-box'>
+              <div key={tech.id} className={`card card${tech.id}`} id='technology-box' style={{ [`--choosencolor${tech.id}`]: tech.color }}>
                 <span>{tech.name}</span>
                 <div className='content'>
                   <a rel='noreferrer' target='_blank' aria-label={tech.name} href={tech.url}>
