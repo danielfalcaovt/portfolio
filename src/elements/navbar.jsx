@@ -48,7 +48,7 @@ export default function Navbar () {
               </a>
             </li>
             <li>
-              <a href='#projects' rel='noreferrer' aria-label='projects section'>
+              <a href='#projects-container' rel='noreferrer' aria-label='projects section'>
                 PROJECTS
                 <hr />
               </a>
