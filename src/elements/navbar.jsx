@@ -9,7 +9,7 @@ export default function Navbar () {
     if (window.scrollY !== 0) {
       setHeaderStyle({
         background: '#18002b8a',
-        borderRadius: '50px', 
+        borderRadius: '50px',
         border: '1px solid #ffffff27',
         backdropFilter: 'blur(10px)'
       })
@@ -43,19 +43,19 @@ export default function Navbar () {
         <div id='navbar-link'>
           <ul>
             <li>
-              <a href='#aboutme'>
+              <a href='#aboutme' rel='noreferrer' aria-label='about section'>
                 ABOUT
                 <hr />
               </a>
             </li>
             <li>
-              <a href='#projects'>
+              <a href='#projects' rel='noreferrer' aria-label='projects section'>
                 PROJECTS
                 <hr />
               </a>
             </li>
             <li>
-              <a href='#technology'>
+              <a href='#technology' rel='noreferrer' aria-label='technology section'>
                 TECHNOLOGY
                 <hr />
               </a>
@@ -67,6 +67,7 @@ export default function Navbar () {
             handleMenu()
           }}
           id='phone-nav-link'
+          aria-label='hamburguer nav button'
         >
           <div id='hamburguer-navlink'>
             <div></div>
@@ -78,19 +79,19 @@ export default function Navbar () {
       <div style={menuOpacity} id='phone-menu'>
         <ul>
           <li onClick={() => { handleMenu() }}>
-            <a href='#aboutme'>
+            <a href='#aboutme' rel='noreferrer'>
               ABOUT
             </a>
           </li>
           <hr/>
           <li onClick={() => { handleMenu() }}>
-            <a href='#projects'>
+            <a href='#projects' rel='noreferrer' >
               PROJECTS
             </a>
           </li>
           <hr/>
           <li onClick={() => { handleMenu() }}>
-            <a href='#technology'>
+            <a href='#technology' rel='noreferrer'>
               TECHNOLOGY
             </a>
           </li>

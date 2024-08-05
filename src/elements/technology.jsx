@@ -15,7 +15,7 @@ export default function Technology () {
               <div key={tech.id} className='card' id='technology-box'>
                 <span>{tech.name}</span>
                 <div className='content'>
-                  <a rel='noreferrer' target='_blank' href={tech.url}>
+                  <a rel='noreferrer' target='_blank' aria-label={tech.name} href={tech.url}>
                     <img src={`./assets/${tech.img}`} alt={`${tech.name}`}/>
                   </a>
                 </div>

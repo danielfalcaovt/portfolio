@@ -29,6 +29,7 @@ export default function Projects () {
                   target='_blank'
                   href={project.link}
                   className='project-about'
+                  aria-label={project.name}
                   draggable
                 >
                   <h1 className='project-title'>{project.name}</h1>
@@ -37,12 +38,12 @@ export default function Projects () {
               </div>
               <div className='project-anchor'>
               {project.github && <div className='project-github'>
-                  <a href={project.github} target='_blank' rel='noreferrer'>
+                  <a href={project.github} target='_blank' rel='noreferrer' aria-label={`${project.name} github page`}>
                     <img title='Server' src='/assets/servidor.png' alt='github'/>
                   </a>
                 </div>}
                 {project.video && <div className='project-video'>
-                  <a href={project.video} rel='noreferrer' target='_blank'>
+                  <a href={project.video} rel='noreferrer' target='_blank' aria-label='project video'>
                     <img title='Showcase Video' src='/assets/youtube.png' alt='youtube'/>
                   </a>
                 </div>
