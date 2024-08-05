@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from 'react'
 
 export default function Aboutme () {
+  console.log('renderizou')
   const [textState, setTextState] = useState({ opacity: 100 })
   const myFunctions = [
-    'Pianist',
-    'Globetrotter',
+    'Pianista',
+    'Viajante',
     'Aquaman',
-    'Problem Solver',
-    'Coffeeholic',
-    'Developer'
+    'Solucionador de Problemas',
+    'Viciado em Café',
+    'Desenvolvedor'
   ]
   const [functionExibida, setFuncaoExibida] = useState(myFunctions[0])
 
@@ -24,8 +25,8 @@ export default function Aboutme () {
       }
       setTimeout(() => {
         setTextState({ opacity: 0 })
-      }, 3000)
-    }, 5000)
+      }, 2000)
+    }, 4000)
   }
 
   useEffect(() => {
@@ -37,15 +38,12 @@ export default function Aboutme () {
       <section id="aboutme">
         <article style={{ backgroundColor: '#18002B', backgroundImage: 'url("/deenedev.jpg")', backgroundSize: 'cover', backgroundPosition: 'center center' }} id='developerphoto'></article>
         <article id='aboutme-main'>
-          <div draggable className='button'>
-            <h1>ABOUT</h1>
-          </div>
           <div id='aboutme-text'>
             <div>
               <h1 style={textState} draggable>{functionExibida}</h1>
             </div>
             <div>
-              <h2>I’m Daniel Falcão, a fullstack developer from Rio de Janeiro, Brazil and a technology lover. I’ll bring you my expertise developing next-level websites and web applications</h2>
+              <h2>Olá! Sou Daniel Falcão, um desenvolvedor fullstack, e um amante fiel da tecnologia. Transformarei sua ideia em realidade digital através da minha expertise desenvolvendo aplicações web e sites profissionais.</h2>
             </div>
           </div>
         </article>

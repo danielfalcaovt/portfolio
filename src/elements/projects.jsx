@@ -7,10 +7,7 @@ export default function Projects () {
   return (
     <section id='projects-container'>
       <div id='projects-title'>
-        <div draggable className='button'>
-          <h1>WORK</h1>
-        </div>
-        <h1>Dig into my world</h1>
+        <h1>Mergulhe no meu mundo</h1>
       </div>
       <div id='projects'>
         {allProjects.map((project) => {

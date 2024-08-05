@@ -2,7 +2,7 @@
   background: #08000D;
   border: 0px;
   border-bottom:  1px solid #ffffff27;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   overflow-x: hidden;
   display: grid;
@@ -35,7 +35,7 @@
 }
 
 #aboutme-text h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   transition: all 0.3s;
 }
 
