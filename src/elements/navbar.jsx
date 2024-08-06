@@ -43,19 +43,19 @@ export default function Navbar () {
           <ul>
             <li>
               <a href='#aboutme' rel='noreferrer' aria-label='about section'>
-                ABOUT
+                SOBRE
                 <hr />
               </a>
             </li>
             <li>
               <a href='#projects-container' rel='noreferrer' aria-label='projects section'>
-                PROJECTS
+                PROJETOS
                 <hr />
               </a>
             </li>
             <li>
               <a href='#technology' rel='noreferrer' aria-label='technology section'>
-                TECHNOLOGY
+                TECNOLOGIAS
                 <hr />
               </a>
             </li>

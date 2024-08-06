@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react'
 
 export default function Aboutme () {
-  console.log('renderizou')
   const [textState, setTextState] = useState({ opacity: 100 })
   const myFunctions = [
     'Pianista',
