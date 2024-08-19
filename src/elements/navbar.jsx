@@ -79,19 +79,19 @@ export default function Navbar () {
         <ul>
           <li onClick={() => { handleMenu() }}>
             <a href='#aboutme' rel='noreferrer'>
-              ABOUT
+              SOBRE MIM
             </a>
           </li>
           <hr/>
           <li onClick={() => { handleMenu() }}>
             <a href='#projects' rel='noreferrer' >
-              PROJECTS
+              PROJETOS
             </a>
           </li>
           <hr/>
           <li onClick={() => { handleMenu() }}>
             <a href='#technology' rel='noreferrer'>
-              TECHNOLOGY
+              TECNOLOGIAS
             </a>
           </li>
         </ul>

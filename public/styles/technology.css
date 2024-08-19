@@ -1,15 +1,20 @@
 #technology {
-  height: max-content;
+  height: 160vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr;
   width: 100%;
   position: relative;
   z-index: 10;
-  display: flex;
   flex-direction: column;
-  height: 160vh;
-  justify-content: space-evenly;
-  align-items: center;
   background: #08000D;
   overflow: hidden;
+}
+
+#technology-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #technology-title>h1 {
@@ -326,7 +331,12 @@
     text-align: center;
   }
 
+  #technology {
+    height: max-content;
+  }
+
   #technology-title {
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
