@@ -68,5 +68,12 @@ export const allTechnologies = [
     img: 'git.png',
     url: 'https://github.com/danielfalcaovt',
     color: 'orange'
+  },
+  {
+    id: 11,
+    name: 'Docker',
+    img: 'docker.png',
+    url: 'https://github.com/danielfalcaovt',
+    color: 'blue'
   }
 ]
