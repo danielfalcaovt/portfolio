@@ -1,18 +1,35 @@
 /* eslint-disable no-unused-vars */
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { allProjects } from '../data/projects'
 
 export default function Projects () {
+  const [index, setIndex] = useState(0)
+  function carrosel () {
+    if (index >= allProjects.length - 1) {
+      setIndex(0)
+    } else {
+      setIndex(index + 1)
+    }
+  }
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      carrosel()
+    }, 4500)
+    return () => clearInterval(intervalId)
+  })
+
   return (
     <section id='projects-container'>
       <div id='projects-title'>
-        <h1>Mergulhe no meu mundo</h1>
+        <h1 onClick={() => {
+          carrosel()
+        }}>Mergulhe no meu mundo</h1>
       </div>
-      <div id='projects'>
+      <div id='projects' style={{ transform: `translateX(${-100 * index}vw)` }}>
         {allProjects.map((project) => {
           return (
-            <div key={project.id} className='project-box'>
+            <div key={project.id} className={'project-box'}>
               <div
                 style={{
                   background: `#08000D url('./assets/${project.bg}') no-repeat left center/cover`
