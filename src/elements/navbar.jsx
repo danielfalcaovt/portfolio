@@ -42,19 +42,28 @@ export default function Navbar () {
         <div id='navbar-link'>
           <ul>
             <li>
-              <a href='#aboutme' rel='noreferrer' aria-label='about section'>
+              <a href='#' onClick={(evt) => {
+                evt.preventDefault()
+                document.querySelector('#aboutme').scrollIntoView({ behavior: 'smooth' })
+              }} rel='noreferrer' aria-label='about section'>
                 SOBRE
                 <hr />
               </a>
             </li>
             <li>
-              <a href='#projects-container' rel='noreferrer' aria-label='projects section'>
+              <a href='#' onClick={(evt) => {
+                evt.preventDefault()
+                document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })
+              }} rel='noreferrer' aria-label='projects section'>
                 PROJETOS
                 <hr />
               </a>
             </li>
             <li>
-              <a href='#technology' rel='noreferrer' aria-label='technology section'>
+              <a href='#' onClick={(evt) => {
+                evt.preventDefault()
+                document.querySelector('#technology').scrollIntoView({ behavior: 'smooth' })
+              }} rel='noreferrer' aria-label='technology section'>
                 TECNOLOGIAS
                 <hr />
               </a>
