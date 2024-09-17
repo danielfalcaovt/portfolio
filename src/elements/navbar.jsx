@@ -53,7 +53,7 @@ export default function Navbar () {
             <li>
               <a href='#' onClick={(evt) => {
                 evt.preventDefault()
-                document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })
+                document.querySelector('#projects-container').scrollIntoView({ behavior: 'smooth' })
               }} rel='noreferrer' aria-label='projects section'>
                 PROJETOS
                 <hr />
