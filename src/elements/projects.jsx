@@ -4,19 +4,19 @@ import React, { useEffect, useState } from 'react'
 import { allProjects } from '../data/projects'
 
 export default function Projects () {
-  const [index, setIndex] = useState(-1)
+  const [index, setIndex] = useState(0)
   function carrosel (dir) {
     if (dir === 1) {
-      if (index >= allProjects.length - 2) {
-        setIndex(-1)
+      if (index >= allProjects.length - 1) {
+        setIndex(0)
       } else {
         setIndex(index + 1)
       }
     } else {
-      if (index > -1) {
+      if (index > 0) {
         setIndex(index - 1)
       } else {
-        setIndex(allProjects.length - 2)
+        setIndex(allProjects.length - 1)
       }
     }
   }

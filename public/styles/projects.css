@@ -68,12 +68,12 @@
   overflow: hidden;
   z-index: 10;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 #projects-carrosel {
-  width: calc(100vw * 3);
+  width: calc(100vw * 4);
   height: 100vh;
   display: flex;
   transition: all 0.3s;
