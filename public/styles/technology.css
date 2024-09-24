@@ -295,6 +295,30 @@
   background: linear-gradient(45deg, var(--choosencolor11), var(--choosencolor11));
 }
 
+
+.card12::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(30px);
+  background: linear-gradient(45deg, var(--choosencolor12), var(--choosencolor12));
+}
+
+.card12::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left:0;
+  border-radius: 1.2em;
+  background: linear-gradient(45deg, var(--choosencolor12), var(--choosencolor12));
+}
+
+
 .card:hover .content {
   transform: translateY(-20px);
 }

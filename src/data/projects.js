@@ -5,15 +5,14 @@ export const allProjects = [
     type: 'Local Web App',
     bg: 'project1.png',
     link: 'https://github.com/danielfalcaovt/GestorDeAlunos-Frontend',
-    github: 'https://github.com/danielfalcaovt/GestorDeAlunos-Backend',
-    video: 'https://www.youtube.com/watch?v=mVQNrQVGPrk&ab_channel=deenedev'
+    github: 'https://github.com/danielfalcaovt/GestorDeAlunos-Backend'
   },
   {
     id: 2,
     name: 'MY BOOKSHELF',
     type: 'Website',
     bg: 'project2.png',
-    link: 'https://my-bookshelf-three.vercel.app/',
+    link: 'https://my-bookshelf-pl3l.vercel.app/',
     github: 'https://github.com/danielfalcaovt/my-bookshelf'
   },
   {
@@ -23,5 +22,13 @@ export const allProjects = [
     bg: 'project3.png',
     link: 'https://github.com/danielfalcaovt/TaskManager',
     github: 'https://github.com/danielfalcaovt/TaskManager-BACKEND'
+  },
+  {
+    id: 4,
+    name: 'GerenciaBook',
+    type: 'Web Application',
+    bg: 'project4.png',
+    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
+    github: 'https://github.com/danielfalcaovt/GerenciaBook-API'
   }
 ]

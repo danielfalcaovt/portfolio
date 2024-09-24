@@ -4,49 +4,49 @@ export const allTechnologies = [
     name: 'JavaScript',
     img: 'javascript.png',
     url: 'https://github.com/danielfalcaovt/AngelaYuCourse/tree/main/ADVANCED%20JAVASCRIPT',
-    color: 'yellow'
+    color: '#FFD600'
   },
   {
     id: 2,
     name: 'NodeJS',
     img: 'nodejs.png',
     url: 'https://github.com/danielfalcaovt/AngelaYuCourse/tree/main/BACKEND',
-    color: 'green'
+    color: '#21A366'
   },
   {
     id: 3,
     name: 'React',
     img: 'react.png',
     url: 'https://github.com/danielfalcaovt/AngelaYuCourse/tree/main/REACT',
-    color: 'blue'
+    color: '#1976D2'
   },
   {
     id: 4,
     name: 'TypeScript',
     img: 'typescript.png',
     url: 'https://github.com/danielfalcaovt/Solid-Clean-Architecture-TDD-TypeScript-Training',
-    color: 'blue'
+    color: '#1976D2'
   },
   {
     id: 5,
     name: 'PostgreSQL',
     img: 'postgresql.png',
     url: 'https://github.com/danielfalcaovt/SCEA',
-    color: 'blue'
+    color: '#0177BD'
   },
   {
     id: 6,
     name: 'Bootstrap',
     img: 'bootstrap.png',
     url: 'https://github.com/danielfalcaovt/AngelaYuCourse/tree/main/BOOTSTRAP',
-    color: 'blue'
+    color: '#7C4DFF'
   },
   {
     id: 7,
     name: 'C#',
     img: 'csharp.png',
     url: 'https://github.com/danielfalcaovt/',
-    color: 'purple'
+    color: '#B14796'
   },
   {
     id: 8,
@@ -60,20 +60,27 @@ export const allTechnologies = [
     name: 'Jest',
     img: 'jest.png',
     url: 'https://github.com/danielfalcaovt/TDD',
-    color: 'red'
+    color: '#d32e5a'
   },
   {
     id: 10,
     name: 'Git',
     img: 'git.png',
     url: 'https://github.com/danielfalcaovt',
-    color: 'orange'
+    color: '#F05033'
   },
   {
     id: 11,
     name: 'Docker',
     img: 'docker.png',
     url: 'https://github.com/danielfalcaovt',
-    color: 'blue'
+    color: '#1D63ED'
+  },
+  {
+    id: 12,
+    name: '.NET FRAMEWORK',
+    img: 'dotnet.png',
+    url: 'https://github.com/danielfalcaovt',
+    color: '#5027D5'
   }
 ]
