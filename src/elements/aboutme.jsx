@@ -5,12 +5,11 @@ import React, { useEffect, useState } from 'react'
 export default function Aboutme () {
   const [textState, setTextState] = useState({ opacity: 100 })
   const myFunctions = [
+    'Desenvolvedor',
     'Pianista',
     'Viajante',
-    'Aquaman',
     'Solucionador de Problemas',
-    'Viciado em Café',
-    'Desenvolvedor'
+    'Viciado em Café'
   ]
   const [functionExibida, setFuncaoExibida] = useState(myFunctions[0])
 
