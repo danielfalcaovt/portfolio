@@ -6,11 +6,13 @@ header {
   z-index: 20;
   height: 15vh;
   width: 100vw;
+  pointer-events: none;
   top: 0px;
 }
 
 #navbar {
   display: flex;
+  pointer-events: all;
   border: 1px solid transparent;
   border-radius: 50px;
   transition: all 0.5s;
