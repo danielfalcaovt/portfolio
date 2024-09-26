@@ -17,6 +17,7 @@ header {
   border-radius: 50px;
   transition: all 0.5s;
   justify-content: space-between;
+  max-height: 60px;
   height: 10vh;
   padding: 0px 25px;
   width: 90%;
@@ -74,6 +75,7 @@ header {
 
 #phone-menu {
   display: none;
+  pointer-events: all;
 }
 
 @media screen and (max-width: 900px) {
@@ -85,9 +87,29 @@ header {
 @media screen and (max-width: 500px) {
   #close-phone-menu {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    width: 60px;
+    height: 30px;
+    top: 40px;
+    right: 40px;
     cursor: pointer;
+  }
+  .close-phone1{
+    background: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 5px;
+    transform: rotate(45deg);
+    width: 50px;
+  }
+  .close-phone2 {
+    background: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 5px;
+    transform: rotate(-45deg);
+    width: 50px;
   }
   #phone-menu {
     display: flex;
@@ -162,6 +184,10 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  #hamburguer-navlink {
+    transition: all 0.3s;
   }
 
   #hamburguer-navlink>div {

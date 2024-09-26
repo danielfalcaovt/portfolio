@@ -23,7 +23,7 @@ export default function Aboutme () {
       }
       setTimeout(() => {
         setTextState({ opacity: 0 })
-      }, 2000)
+      }, 3000)
     }, 4000)
   }
 

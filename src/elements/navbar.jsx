@@ -75,6 +75,7 @@ export default function Navbar () {
             handleMenu()
           }}
           id='phone-nav-link'
+          style={menuIsVisible ? { opacity: 0 } : {}}
           aria-label='hamburguer nav button'
         >
           <div id='hamburguer-navlink'>
@@ -85,20 +86,24 @@ export default function Navbar () {
         </div>
       </nav>
       <div style={menuOpacity} id='phone-menu'>
+        <div id='close-phone-menu' onClick={handleMenu}>
+          <div className='close-phone1'></div>
+          <div className='close-phone2'></div>
+        </div>
         <ul>
-          <li onClick={() => { handleMenu() }}>
+          <li onClick={handleMenu}>
             <a href='#aboutme' rel='noreferrer'>
               SOBRE MIM
             </a>
           </li>
           <hr/>
-          <li onClick={() => { handleMenu() }}>
+          <li onClick={handleMenu}>
             <a href='#projects' rel='noreferrer' >
               PROJETOS
             </a>
           </li>
           <hr/>
-          <li onClick={() => { handleMenu() }}>
+          <li onClick={handleMenu}>
             <a href='#technology' rel='noreferrer'>
               TECNOLOGIAS
             </a>
