@@ -1,11 +1,11 @@
 export const allProjects = [
   {
     id: 1,
-    name: 'Students Manager',
-    type: 'Local Web App',
-    bg: 'project1.png',
-    link: 'https://github.com/danielfalcaovt/GestorDeAlunos-Frontend',
-    github: 'https://github.com/danielfalcaovt/GestorDeAlunos-Backend'
+    name: 'GerenciaBook',
+    type: 'Web Application',
+    bg: 'project4.png',
+    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
+    github: 'https://github.com/danielfalcaovt/GerenciaBook-API'
   },
   {
     id: 2,
@@ -25,10 +25,10 @@ export const allProjects = [
   },
   {
     id: 4,
-    name: 'GerenciaBook',
+    name: 'Students Manager',
     type: 'Web Application',
-    bg: 'project4.png',
-    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
-    github: 'https://github.com/danielfalcaovt/GerenciaBook-API'
+    bg: 'project1.png',
+    link: 'https://github.com/danielfalcaovt/GestorDeAlunos-Frontend',
+    github: 'https://github.com/danielfalcaovt/GestorDeAlunos-Backend'
   }
 ]
