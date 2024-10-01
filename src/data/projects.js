@@ -12,7 +12,7 @@ export const allProjects = [
     name: 'MY BOOKSHELF',
     type: 'Website',
     bg: 'project2.png',
-    link: 'https://my-bookshelf-pl3l.vercel.app/',
+    link: 'https://minha-bookshelf.vercel.app/',
     github: 'https://github.com/danielfalcaovt/my-bookshelf'
   },
   {
