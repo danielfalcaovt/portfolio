@@ -7,7 +7,7 @@
   position: relative;
   z-index: 10;
   flex-direction: column;
-  background: #08000D;
+  background: #08000d;
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-#technology-title>h1 {
+#technology-title > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,8 +48,8 @@
 .card {
   position: relative;
   margin: 10px;
-  width: 190px;
-  height: 254px;
+  width: 150px;
+  height: 214px;
   color: #fff;
   transition: 0.5s;
 }
@@ -71,7 +71,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
   background: linear-gradient(45deg, var(--choosencolor1), white);
 }
@@ -84,7 +84,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor2), var(--choosencolor2));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor2),
+    var(--choosencolor2)
+  );
 }
 
 .card2::before {
@@ -93,9 +97,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor2), var(--choosencolor2));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor2),
+    var(--choosencolor2)
+  );
 }
 
 .card3::after {
@@ -106,7 +114,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor3), var(--choosencolor3));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor3),
+    var(--choosencolor3)
+  );
 }
 
 .card3::before {
@@ -115,9 +127,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor3), var(--choosencolor3));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor3),
+    var(--choosencolor3)
+  );
 }
 
 .card4::after {
@@ -128,7 +144,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor4), var(--choosencolor4));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor4),
+    var(--choosencolor4)
+  );
 }
 
 .card4::before {
@@ -137,9 +157,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor4), var(--choosencolor4));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor4),
+    var(--choosencolor4)
+  );
 }
 .card5::after {
   content: '';
@@ -149,7 +173,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor5), var(--choosencolor5));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor5),
+    var(--choosencolor5)
+  );
 }
 
 .card5::before {
@@ -158,9 +186,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor5), var(--choosencolor5));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor5),
+    var(--choosencolor5)
+  );
 }
 
 .card6::after {
@@ -171,7 +203,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor6), var(--choosencolor6));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor6),
+    var(--choosencolor6)
+  );
 }
 
 .card6::before {
@@ -180,9 +216,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor6), var(--choosencolor6));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor6),
+    var(--choosencolor6)
+  );
 }
 .card7::after {
   content: '';
@@ -192,7 +232,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor7), var(--choosencolor7));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor7),
+    var(--choosencolor7)
+  );
 }
 
 .card7::before {
@@ -201,9 +245,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor7), var(--choosencolor7));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor7),
+    var(--choosencolor7)
+  );
 }
 
 .card8::after {
@@ -214,7 +262,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor8), var(--choosencolor8));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor8),
+    var(--choosencolor8)
+  );
 }
 
 .card8::before {
@@ -223,9 +275,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor8), var(--choosencolor8));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor8),
+    var(--choosencolor8)
+  );
 }
 
 .card9::after {
@@ -236,7 +292,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor9), var(--choosencolor9));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor9),
+    var(--choosencolor9)
+  );
 }
 
 .card9::before {
@@ -245,9 +305,13 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor9), var(--choosencolor9));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor9),
+    var(--choosencolor9)
+  );
 }
 
 .card10::after {
@@ -258,7 +322,11 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor10), var(--choosencolor10));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor10),
+    var(--choosencolor10)
+  );
 }
 
 .card10::before {
@@ -267,11 +335,14 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor10), var(--choosencolor10));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor10),
+    var(--choosencolor10)
+  );
 }
-
 
 .card11::after {
   content: '';
@@ -281,20 +352,27 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor11), var(--choosencolor11));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor11),
+    var(--choosencolor11)
+  );
 }
 
 .card11::before {
   content: '';
   width: 100%;
   height: 100%;
-  position: absolute; 
+  position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor11), var(--choosencolor11));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor11),
+    var(--choosencolor11)
+  );
 }
-
 
 .card12::after {
   content: '';
@@ -304,20 +382,57 @@
   width: 100%;
   height: 100%;
   filter: blur(30px);
-  background: linear-gradient(45deg, var(--choosencolor12), var(--choosencolor12));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor12),
+    var(--choosencolor12)
+  );
 }
 
 .card12::before {
   content: '';
   width: 100%;
   height: 100%;
-  position: absolute; 
+  position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   border-radius: 1.2em;
-  background: linear-gradient(45deg, var(--choosencolor12), var(--choosencolor12));
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor12),
+    var(--choosencolor12)
+  );
 }
 
+.card13::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(30px);
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor13),
+    var(--choosencolor13)
+  );
+}
+
+.card13::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.2em;
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor13),
+    var(--choosencolor13)
+  );
+}
 
 .card:hover .content {
   transform: translateY(-20px);
@@ -342,6 +457,8 @@
 .card span::before {
   content: '';
   position: absolute;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   top: 0;
   left: 0;
   width: 50%;
@@ -369,13 +486,18 @@
 
 @media screen and (max-width: 900px) {
   .card {
-    width: calc(190px/2);
-    height: calc(254px/2);
+    width: calc(150px / 2);
+    height: calc(214px / 2);
   }
 
   .card span {
     font-size: 0.9rem;
+    color: transparent;
     text-align: center;
+  }
+
+  .card span:last-child {
+    opacity: 0;
   }
 
   #technology {
@@ -389,7 +511,7 @@
     align-items: center;
   }
 
-  #technology-title>h1 {
+  #technology-title > h1 {
     font-size: 2.3rem;
   }
 

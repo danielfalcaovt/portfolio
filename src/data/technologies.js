@@ -82,5 +82,12 @@ export const allTechnologies = [
     img: 'dotnet.png',
     url: 'https://github.com/danielfalcaovt',
     color: '#5027D5'
+  },
+  {
+    id: 13,
+    name: 'Redis',
+    img: 'redis.png',
+    url: 'https://github.com/danielfalcaovt',
+    color: '#D9281A'
   }
 ]
