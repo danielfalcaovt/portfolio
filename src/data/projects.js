@@ -22,13 +22,5 @@ export const allProjects = [
     bg: 'project3.png',
     link: 'https://github.com/danielfalcaovt/TaskManager',
     github: 'https://github.com/danielfalcaovt/TaskManager-BACKEND'
-  },
-  {
-    id: 4,
-    name: 'Students Manager',
-    type: 'Web Application',
-    bg: 'project1.png',
-    link: 'https://github.com/danielfalcaovt/GestorDeAlunos-Frontend',
-    github: 'https://github.com/danielfalcaovt/GestorDeAlunos-Backend'
   }
 ]
