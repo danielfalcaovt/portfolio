@@ -1,15 +1,15 @@
 /* eslint-disable no-unused-vars */
-
+import ScrollReveal from 'scrollreveal'
 import React, { useEffect, useState } from 'react'
 
 export default function Aboutme () {
   const [textState, setTextState] = useState({ opacity: 100 })
   const myFunctions = [
     'Desenvolvedor',
-    'Pianista',
     'Viajante',
     'Solucionador de Problemas',
-    'Viciado em Café'
+    'Viciado em Café',
+    'Corredor'
   ]
   const [functionExibida, setFuncaoExibida] = useState(myFunctions[0])
 
@@ -29,6 +29,12 @@ export default function Aboutme () {
 
   useEffect(() => {
     changeAboutMeCuriosity()
+    ScrollReveal().reveal('#aboutme-text>div', {
+      distance: '100px',
+      delay: 50,
+      duration: 1500,
+      origin: 'right'
+    })
   }, [])
 
   return (
