@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 
 export default function Navbar () {
   const [headerStyle, setHeaderStyle] = useState()
-  const [menuOpacity, setMenuOpacity] = useState({ visibility: 'hidden', opacity: 0 })
+  const [menuOpacity, setMenuOpacity] = useState({
+    visibility: 'hidden',
+    opacity: 0
+  })
   const [menuIsVisible, setMenuVisible] = useState(false)
   window.addEventListener('scroll', () => {
     if (window.scrollY !== 0) {
@@ -29,7 +32,7 @@ export default function Navbar () {
 
   return (
     <header>
-      <nav id='navbar' style={headerStyle}>
+      <nav id="navbar" style={headerStyle}>
         <div>
           <h1
             onClick={() => {
@@ -39,31 +42,52 @@ export default function Navbar () {
             DEENE<span>DEV</span>
           </h1>
         </div>
-        <div id='navbar-link'>
+        <div id="navbar-link">
           <ul>
             <li>
-              <a href='#' onClick={(evt) => {
-                evt.preventDefault()
-                document.querySelector('#aboutme').scrollIntoView({ behavior: 'smooth' })
-              }} rel='noreferrer' aria-label='about section'>
+              <a
+                href="#"
+                onClick={(evt) => {
+                  evt.preventDefault()
+                  document
+                    .querySelector('#aboutme')
+                    .scrollIntoView({ behavior: 'smooth' })
+                }}
+                rel="noreferrer"
+                aria-label="about section"
+              >
                 SOBRE
                 <hr />
               </a>
             </li>
             <li>
-              <a href='#' onClick={(evt) => {
-                evt.preventDefault()
-                document.querySelector('#projects-container').scrollIntoView({ behavior: 'smooth' })
-              }} rel='noreferrer' aria-label='projects section'>
+              <a
+                href="#"
+                onClick={(evt) => {
+                  evt.preventDefault()
+                  document
+                    .querySelector('#projects-container')
+                    .scrollIntoView({ behavior: 'smooth' })
+                }}
+                rel="noreferrer"
+                aria-label="projects section"
+              >
                 PROJETOS
                 <hr />
               </a>
             </li>
             <li>
-              <a href='#' onClick={(evt) => {
-                evt.preventDefault()
-                document.querySelector('#technology').scrollIntoView({ behavior: 'smooth' })
-              }} rel='noreferrer' aria-label='technology section'>
+              <a
+                href="#"
+                onClick={(evt) => {
+                  evt.preventDefault()
+                  document
+                    .querySelector('#technology')
+                    .scrollIntoView({ behavior: 'smooth' })
+                }}
+                rel="noreferrer"
+                aria-label="technology section"
+              >
                 TECNOLOGIAS
                 <hr />
               </a>
@@ -74,37 +98,64 @@ export default function Navbar () {
           onClick={() => {
             handleMenu()
           }}
-          id='phone-nav-link'
+          id="phone-nav-link"
           style={menuIsVisible ? { opacity: 0 } : {}}
-          aria-label='hamburguer nav button'
+          aria-label="hamburguer nav button"
         >
-          <div id='hamburguer-navlink'>
+          <div id="hamburguer-navlink">
             <div></div>
             <div></div>
             <div></div>
           </div>
         </div>
       </nav>
-      <div style={menuOpacity} id='phone-menu'>
-        <div id='close-phone-menu' onClick={handleMenu}>
-          <div className='close-phone1'></div>
-          <div className='close-phone2'></div>
+      <div style={menuOpacity} id="phone-menu">
+        <div id="close-phone-menu" onClick={handleMenu}>
+          <div className="close-phone1"></div>
+          <div className="close-phone2"></div>
         </div>
         <ul>
           <li onClick={handleMenu}>
-            <a href='#aboutme' rel='noreferrer'>
+            <a
+              href="#"
+              onClick={(evt) => {
+                evt.preventDefault()
+                document
+                  .querySelector('#aboutme')
+                  .scrollIntoView({ behavior: 'smooth' })
+              }}
+              rel="noreferrer"
+            >
               SOBRE MIM
             </a>
           </li>
-          <hr/>
+          <hr />
           <li onClick={handleMenu}>
-            <a href='#projects' rel='noreferrer' >
+            <a
+              href="#"
+              onClick={(evt) => {
+                evt.preventDefault()
+                document
+                  .querySelector('#projects')
+                  .scrollIntoView({ behavior: 'smooth' })
+              }}
+              rel="noreferrer"
+            >
               PROJETOS
             </a>
           </li>
-          <hr/>
+          <hr />
           <li onClick={handleMenu}>
-            <a href='#technology' rel='noreferrer'>
+            <a
+              href="#"
+              onClick={(evt) => {
+                evt.preventDefault()
+                document
+                  .querySelector('#technology')
+                  .scrollIntoView({ behavior: 'smooth' })
+              }}
+              rel="noreferrer"
+            >
               TECNOLOGIAS
             </a>
           </li>
