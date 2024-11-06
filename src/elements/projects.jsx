@@ -9,7 +9,6 @@ export default function Projects () {
   const [arrowMoving, setArrowMoving] = useState(false)
   function carrosel (dir) {
     setArrowMoving(true)
-    setIsMoving(false)
     if (dir === 1) {
       if (index >= allProjects.length - 1) {
         setIndex(0)
@@ -41,16 +40,16 @@ export default function Projects () {
     }
   }, [])
 
-  const [startX, setStartX] = useState(0)
   const [dragStyle, setDragStyle] = useState(0)
   const [alreadyMoved, setAlreadyMoved] = useState(0)
-  const [isMoving, setIsMoving] = useState(false)
   const [pointerEvents, setPointerEvents] = useState(true)
+  let startX = 0
 
   function mouseDown (e) {
-    setStartX(e.clientX)
-    setIsMoving(true)
+    startX = e.clientX
     setArrowMoving(false)
+    document.addEventListener('mousemove', mouseMove)
+    document.addEventListener('mouseup', mouseUp)
   }
 
   function mouseMove (e) {
@@ -66,16 +65,18 @@ export default function Projects () {
   }
 
   function mouseUp (e) {
-    setAlreadyMoved(dragStyle)
-    setIsMoving(false)
     setPointerEvents(true)
+    document.removeEventListener('mousemove', mouseMove)
+    document.removeEventListener('mouseup', mouseUp)
   }
+
+  useEffect(() => {
+    setAlreadyMoved(dragStyle)
+  }, [dragStyle])
 
   return (
     <section
       id="projects-container"
-      onMouseMove={isMoving ? mouseMove : undefined}
-      onMouseUp={isMoving ? mouseUp : undefined}
       >
       <div id="projects-title">
         <img
