@@ -6,7 +6,10 @@ import { allProjects } from '../data/projects'
 
 export default function Projects () {
   const [index, setIndex] = useState(0)
+  const [arrowMoving, setArrowMoving] = useState(false)
   function carrosel (dir) {
+    setArrowMoving(true)
+    setIsMoving(false)
     if (dir === 1) {
       if (index >= allProjects.length - 1) {
         setIndex(0)
@@ -38,8 +41,42 @@ export default function Projects () {
     }
   }, [])
 
+  const [startX, setStartX] = useState(0)
+  const [dragStyle, setDragStyle] = useState(0)
+  const [alreadyMoved, setAlreadyMoved] = useState(0)
+  const [isMoving, setIsMoving] = useState(false)
+  const [pointerEvents, setPointerEvents] = useState(true)
+
+  function mouseDown (e) {
+    setStartX(e.clientX)
+    setIsMoving(true)
+    setArrowMoving(false)
+  }
+
+  function mouseMove (e) {
+    setPointerEvents(false)
+    setDragStyle(() => {
+      const result = alreadyMoved + (e.clientX - startX)
+      if (result > -3200) {
+        return result
+      } else {
+        return -3000
+      }
+    })
+  }
+
+  function mouseUp (e) {
+    setAlreadyMoved(dragStyle)
+    setIsMoving(false)
+    setPointerEvents(true)
+  }
+
   return (
-    <section id="projects-container">
+    <section
+      id="projects-container"
+      onMouseMove={isMoving ? mouseMove : undefined}
+      onMouseUp={isMoving ? mouseUp : undefined}
+      >
       <div id="projects-title">
         <img
           src="/assets/arrow.png"
@@ -57,12 +94,15 @@ export default function Projects () {
           }}
           className="projects-arrow right-arrow"
           alt="right arrow"
-        />
+          />
       </div>
       <div id="projects">
         <div
           id="projects-carrosel"
-          style={{ transform: `translateX(${-100 * index}vw)` }}
+          style={arrowMoving ? { transform: `translateX(${-100 * index}vw)` } : { transform: `translateX(${dragStyle}px)`, pointerEvents: pointerEvents ? 'all' : 'none' }}
+          onMouseDown={mouseDown}
+          onDragEnter={mouseDown}
+          onTouchStart={mouseDown}
         >
           {allProjects.map((project) => {
             return (
@@ -80,10 +120,10 @@ export default function Projects () {
                     href={project.link}
                     className="project-about"
                     aria-label={project.name}
-                    draggable
+                    draggable="false"
                   >
-                    <h1 className="project-title">{project.name}</h1>
-                    <p className="project-type">{project.type}</p>
+                    <h1 draggable="false" className="project-title">{project.name}</h1>
+                    <p draggable="false" className="project-type">{project.type}</p>
                   </a>
                 </div>
                 <div className="project-anchor">
