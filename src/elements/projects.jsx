@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 import React, { useEffect, useState } from 'react'
+import ScrollReveal from 'scrollreveal'
 import { allProjects } from '../data/projects'
 
 export default function Projects () {
@@ -21,6 +22,22 @@ export default function Projects () {
     }
   }
 
+  useEffect(() => {
+    const elementsInDiv = [
+      { el: '.left-arrow', origin: 'right' },
+      { el: '#projects-title>h1', origin: 'top' },
+      { el: '.right-arrow', origin: 'right' }
+    ]
+    for (const pos of elementsInDiv) {
+      ScrollReveal().reveal(pos.el, {
+        distance: '150%',
+        delay: 50,
+        duration: 1500,
+        origin: pos.origin
+      })
+    }
+  }, [])
+
   return (
     <section id="projects-container">
       <div id="projects-title">
@@ -29,7 +46,7 @@ export default function Projects () {
           onClick={() => {
             carrosel(2)
           }}
-          className='projects-arrow left-arrow'
+          className="projects-arrow left-arrow"
           alt="left arrow"
         />
         <h1>Mergulhe no meu mundo</h1>
@@ -38,7 +55,7 @@ export default function Projects () {
           onClick={() => {
             carrosel(1)
           }}
-          className='projects-arrow right-arrow'
+          className="projects-arrow right-arrow"
           alt="right arrow"
         />
       </div>
