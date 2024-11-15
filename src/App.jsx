@@ -10,6 +10,22 @@ import Navbar from './elements/navbar'
 function App () {
   const [loading, setLoading] = useState(true)
   const [loadingAnimation, setLoadingAnimation] = useState({})
+  const [presentationEffect, setPresEffect] = useState({ x: 0, y: 0 })
+
+  function mouseMove (e) {
+    let x, y
+    if (e.clientX > document.querySelector('#root').clientWidth / 2) {
+      x = 1
+    } else {
+      x = -1
+    }
+    if (e.clientY > document.querySelector('#presentation').clientHeight / 2) {
+      y = 1
+    } else {
+      y = -1
+    }
+    setPresEffect({ x, y })
+  }
 
   function finishLoad () {
     setLoading(false)
@@ -32,14 +48,20 @@ function App () {
   return (
     <>
       {loading
-        ? <div className='loading-container'>
-        <div style={loadingAnimation} className='loading'>
+        ? <div className="loading-container">
+          <div style={loadingAnimation} className="loading"></div>
         </div>
-      </div>
-        : ''}
+        : (
+            ''
+          )}
       <main>
         <Navbar />
-        <Presentation />
+        <Presentation
+          onMouseMove={mouseMove}
+          style={{
+            transform: `rotateX(${presentationEffect.y}deg) rotateY(${presentationEffect.x}deg) scale(1.1)`
+          }}
+        />
         <Aboutme />
         <Projects />
         <Technology />
