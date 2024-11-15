@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html::-webkit-scrollbar-thumb {
   border-radius: 15px;
   background: linear-gradient(0deg, #8000D2, #2B2BC2);
