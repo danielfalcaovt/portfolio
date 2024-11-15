@@ -46,12 +46,12 @@ export default function Projects () {
   let startX = 0
 
   function mouseDown (e) {
+    e.preventDefault()
     startX = e.clientX
     setArrowMoving(false)
     document.addEventListener('mousemove', mouseMove)
     document.addEventListener('mouseup', mouseUp)
   }
-
   function mouseMove (e) {
     setPointerEvents(false)
     setDragStyle(() => {
