@@ -64,3 +64,7 @@ html::-webkit-scrollbar {
   height: 100px;
   transition: all 0.5s;
 }
+
+main {
+  perspective: 2460px;
+}
