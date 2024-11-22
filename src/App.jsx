@@ -5,7 +5,7 @@ import Presentation from './elements/presentation'
 import Projects from './elements/projects'
 import Footer from './elements/footer'
 import Technology from './elements/technology'
-import Navbar from './elements/navbar'
+import Header from './elements/header'
 
 function App () {
   const [loading, setLoading] = useState(true)
@@ -54,8 +54,8 @@ function App () {
         : (
             ''
           )}
+      <Header />
       <main>
-        <Navbar />
         <Presentation
           onMouseMove={mouseMove}
           style={{
@@ -65,8 +65,8 @@ function App () {
         <Aboutme />
         <Projects />
         <Technology />
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }
