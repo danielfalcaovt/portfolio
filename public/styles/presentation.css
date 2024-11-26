@@ -24,8 +24,8 @@
   font-size: 3rem;
   font-family: "Joti One", serif;
   text-shadow:
-   3px 3px #c25fff,
-   5px 5px blue;
+   3px 3px #CB57D1,
+   5px 5px #3C0082;
   filter: drop-shadow(2px 2px 5px black);
   animation: text-animation ease-in-out infinite 4s;
 }
