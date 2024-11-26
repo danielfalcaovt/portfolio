@@ -5,7 +5,7 @@ import React from 'react'
 export default function Presentation (props) {
   return (
     <>
-      <section onMouseMove={props.onMouseMove} style={{ backgroundColor: '#050505', backgroundImage: 'url("/bg.jpg")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', ...props.style }} id='presentation'>
+      <section onMouseMove={props.onMouseMove} style={{ backgroundColor: '#050505', backgroundImage: 'url("/bg.webp")', backgroundPosition: 'center center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', ...props.style }} id='presentation'>
         <h1 draggable>deenedev</h1>
       </section>
     </>
