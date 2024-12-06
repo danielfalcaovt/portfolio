@@ -27,6 +27,14 @@ export default function Projects() {
     document.addEventListener('mousemove', mouseMove)
     document.addEventListener('mouseup', mouseUp)
   }
+
+  function touchStart(e) {
+    e.preventDefault()
+    startX = e.touches[0].clientX
+    document.addEventListener('touchmove', touchMove)
+    document.addEventListener('touchend', mouseUp)
+  }
+
   function mouseMove(e) {
     e.preventDefault()
     setPointerEvents(false)
@@ -43,11 +51,29 @@ export default function Projects() {
     })
   }
 
+  function touchMove(e) {
+    e.preventDefault()
+    setPointerEvents(false)
+    setDragStyle(() => {
+      const result = alreadyMoved + (e.touches[0].clientX - startX)
+      console.log(alreadyMoved)
+      if (result > 100) {
+        return 80
+      } else if (result > -1300) {
+        return result
+      } else {
+        return -1200
+      }
+    })
+  }
+
   function mouseUp(e) {
     e.preventDefault()
     setPointerEvents(true)
+    document.removeEventListener('touchmove', touchMove)
     document.removeEventListener('mousemove', mouseMove)
     document.removeEventListener('mouseup', mouseUp)
+    document.removeEventListener('touchend', mouseUp)
   }
 
   useEffect(() => {
@@ -67,8 +93,7 @@ export default function Projects() {
             pointerEvents: pointerEvents ? 'all' : 'none'
           }}
           onMouseDown={mouseDown}
-          onDragEnter={mouseDown}
-          onTouchStart={mouseDown}
+          onTouchStart={touchStart}
         >
           {allProjects.map((project) => {
             return (
