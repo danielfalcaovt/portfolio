@@ -68,7 +68,6 @@ export default function Projects() {
   }
 
   function mouseUp(e) {
-    e.preventDefault()
     setPointerEvents(true)
     document.removeEventListener('touchmove', touchMove)
     document.removeEventListener('mousemove', mouseMove)
@@ -122,22 +121,6 @@ export default function Projects() {
                   </a>
                 </div>
                 <div className="project-anchor">
-                  {project.github && (
-                    <div className="project-github">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`${project.name} github page`}
-                      >
-                        <img
-                          title="Server"
-                          src="/assets/servidor.png"
-                          alt="github"
-                        />
-                      </a>
-                    </div>
-                  )}
                   {project.video && (
                     <div className="project-video">
                       <a
