@@ -9,11 +9,11 @@ export const allProjects = [
   },
   {
     id: 2,
-    name: 'MY BOOKSHELF',
-    type: 'Website',
-    bg: 'project2.png',
-    link: 'https://minha-bookshelf.vercel.app/',
-    github: 'https://github.com/danielfalcaovt/my-bookshelf'
+    name: 'GerenciaBook',
+    type: 'API',
+    bg: 'project4.png',
+    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
+    github: 'https://github.com/danielfalcaovt/GerenciaBook-API'
   },
   {
     id: 3,
@@ -25,10 +25,10 @@ export const allProjects = [
   },
   {
     id: 4,
-    name: 'GerenciaBook',
-    type: 'API',
-    bg: 'project4.png',
-    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
-    github: 'https://github.com/danielfalcaovt/GerenciaBook-API'
+    name: 'MY BOOKSHELF',
+    type: 'Website',
+    bg: 'project2.png',
+    link: 'https://minha-bookshelf.vercel.app/',
+    github: 'https://github.com/danielfalcaovt/my-bookshelf'
   }
 ]
