@@ -16,7 +16,7 @@ export default function Technology() {
     <>
       <section id="technology">
         <div id="technology-title">
-          <h1>Meu Arsenal</h1>
+          <h1>Minhas Ferramentas</h1>
         </div>
         <div id="technologies">
           {allTechnologies.map((tech) => {
