@@ -1,5 +1,5 @@
 #technology {
-  height: 160vh;
+  height: 130vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 1fr;
@@ -41,15 +41,15 @@
 }
 
 #technology-box img {
-  transition: 0.3s;
-  width: 60%;
+  width: 50%;
+  transition: all 0.3s;
 }
 
 .card {
   position: relative;
   margin: 10px;
   width: 150px;
-  height: 214px;
+  height: 150px;
   color: #fff;
   transition: 0.5s;
 }
@@ -72,7 +72,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(45deg, var(--choosencolor1), white);
 }
 
@@ -98,7 +98,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor2),
@@ -128,7 +128,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor3),
@@ -158,7 +158,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor4),
@@ -187,7 +187,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor5),
@@ -217,7 +217,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor6),
@@ -246,7 +246,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor7),
@@ -276,7 +276,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor8),
@@ -306,7 +306,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor9),
@@ -336,7 +336,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor10),
@@ -366,7 +366,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor11),
@@ -396,7 +396,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor12),
@@ -426,7 +426,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 1.2em;
+  border-radius: 50%;
   background: linear-gradient(
     45deg,
     var(--choosencolor13),
@@ -434,31 +434,68 @@
   );
 }
 
-.card:hover .content {
-  transform: translateY(-20px);
+.card14::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(30px);
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor14),
+    var(--choosencolor14)
+  );
+}
+
+.card14::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    var(--choosencolor14),
+    var(--choosencolor14)
+  );
+}
+
+.card:hover > span {
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  box-shadow: inset 0px 0px 0px transparent;
 }
 
 .card:hover img {
-  filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.192));
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.39));
 }
 
 .card span {
   padding: 5px;
   position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
+  box-shadow: inset 0px 5px 5px 1px #00000042;
+  transition: all 0.3s;
+  top: 26px;
+  left: 9px;
+  right: 9px;
+  bottom: 1px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
-  border-radius: 1em;
+  border-radius: 50%;
 }
 
 .card span::before {
   content: '';
   position: absolute;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
   top: 0;
   left: 0;
   width: 50%;
