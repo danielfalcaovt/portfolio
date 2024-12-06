@@ -12,23 +12,20 @@ export const allProjects = [
     name: 'GerenciaBook',
     type: 'API',
     bg: 'project4.png',
-    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
-    github: 'https://github.com/danielfalcaovt/GerenciaBook-API'
+    link: 'https://github.com/danielfalcaovt/GerenciaBook-UI'
   },
   {
     id: 3,
     name: 'Task Manager',
     type: 'API',
     bg: 'project3.png',
-    link: 'https://github.com/danielfalcaovt/TaskManager',
-    github: 'https://github.com/danielfalcaovt/TaskManager-BACKEND'
+    link: 'https://github.com/danielfalcaovt/TaskManager'
   },
   {
     id: 4,
     name: 'MY BOOKSHELF',
     type: 'Website',
     bg: 'project2.png',
-    link: 'https://minha-bookshelf.vercel.app/',
-    github: 'https://github.com/danielfalcaovt/my-bookshelf'
+    link: 'https://minha-bookshelf.vercel.app/'
   }
 ]

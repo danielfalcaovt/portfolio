@@ -54,8 +54,8 @@
 }
 
 #projects-carrosel {
-  width: calc(100vw * 4);
-  height: 100vh;
+  width: calc(40vw * 4);
+  height: 80vh;
   display: flex;
   transition: all 0.3s;
 }
@@ -122,22 +122,22 @@
 }
 
 @media screen and (max-width: 900px) {
+  #projects-carrosel {
+    width: calc(60vw * 4);
+    height: 60vh;
+    display: flex;
+    transition: all 0.3s;
+  }
   #projects-button {
     height: 40px;
     padding: 5px;
   }
   #projects-title > h1 {
     font-size: 2rem;
-    grid-area: 1/1/2/3;
     margin: auto;
   }
   #projects-title > img {
     margin: auto;
-  }
-  #projects-title {
-    display: grid;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-columns: 0.5fr 0.5fr;
   }
   .project-anchor {
     justify-content: space-around;
