@@ -18,18 +18,19 @@
   text-decoration: none;
 }
 
-body {
+body,
+#root {
   overflow-x: hidden;
 }
 
 html::-webkit-scrollbar-thumb {
   border-radius: 15px;
-  background: linear-gradient(0deg, #8000D2, #2B2BC2);
+  background: linear-gradient(0deg, #8000d2, #2b2bc2);
 }
 
 html::-webkit-scrollbar {
   width: 8px;
-  background-color: #08000D;
+  background-color: #08000d;
 }
 
 .button {
@@ -39,20 +40,20 @@ html::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   width: 100px;
-  background: #18002B;
-  border: 1px solid #8000D2;
+  background: #18002b;
+  border: 1px solid #8000d2;
   padding: 10px;
 }
 
-.button>h1 {
+.button > h1 {
   font-size: 1.3rem;
   font-weight: 300;
-  filter: drop-shadow(0px 0px 3px #8000D2);
+  filter: drop-shadow(0px 0px 3px #8000d2);
   color: #b23afc;
 }
 
 .loading-container {
-  background: #08000D;
+  background: #08000d;
   position: fixed;
   z-index: 100;
   display: flex;
