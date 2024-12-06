@@ -43,10 +43,10 @@ export default function Projects() {
       console.log(alreadyMoved)
       if (result > 350) {
         return 320
-      } else if (result > -4400) {
+      } else if (result > -1200) {
         return result
       } else {
-        return -4200
+        return -1100
       }
     })
   }
@@ -59,10 +59,10 @@ export default function Projects() {
       console.log(alreadyMoved)
       if (result > 100) {
         return 80
-      } else if (result > -1300) {
+      } else if (result > -600) {
         return result
       } else {
-        return -1200
+        return -500
       }
     })
   }
