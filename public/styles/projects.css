@@ -39,25 +39,6 @@
   overflow: hidden;
 }
 
-.projects-arrow {
-  filter: invert(1);
-  cursor: pointer;
-  width: 50px;
-  transition: filter 0.3s;
-}
-
-.left-arrow {
-  transform: rotate(180deg);
-}
-
-.left-arrow:hover {
-  filter: invert(0.9);
-}
-
-.right-arrow:hover {
-  filter: invert(0.9);
-}
-
 #projects-title > h1 {
   font-size: 3rem;
 }
