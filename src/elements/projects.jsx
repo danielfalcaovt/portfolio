@@ -5,7 +5,6 @@ import ScrollReveal from 'scrollreveal'
 import { allProjects } from '../data/projects'
 
 export default function Projects() {
-  const [index, setIndex] = useState(0)
   const [alreadyMoved, setAlreadyMoved] = useState(0)
 
   useEffect(() => {
