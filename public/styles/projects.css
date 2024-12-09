@@ -45,7 +45,7 @@
 
 #projects {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
   overflow: hidden;
   z-index: 10;
   display: flex;

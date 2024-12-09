@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal'
 import { allProjects } from '../data/projects'
 
-export default function Projects () {
+export default function Projects() {
   const [index, setIndex] = useState(0)
   const [alreadyMoved, setAlreadyMoved] = useState(0)
 
@@ -21,26 +21,25 @@ export default function Projects () {
   const [pointerEvents, setPointerEvents] = useState(true)
   let startX = 0
 
-  function mouseDown (e) {
+  function mouseDown(e) {
     e.preventDefault()
     startX = e.clientX
     document.addEventListener('mousemove', mouseMove)
     document.addEventListener('mouseup', mouseUp)
   }
 
-  function touchStart (e) {
+  function touchStart(e) {
     e.preventDefault()
     startX = e.touches[0].clientX
     document.addEventListener('touchmove', touchMove)
     document.addEventListener('touchend', mouseUp)
   }
 
-  function mouseMove (e) {
+  function mouseMove(e) {
     e.preventDefault()
     setPointerEvents(false)
     setDragStyle(() => {
       const result = alreadyMoved + (e.clientX - startX)
-      console.log(alreadyMoved)
       if (result > 350) {
         return 320
       } else if (result > -1200) {
@@ -51,12 +50,11 @@ export default function Projects () {
     })
   }
 
-  function touchMove (e) {
+  function touchMove(e) {
     e.preventDefault()
     setPointerEvents(false)
     setDragStyle(() => {
       const result = alreadyMoved + (e.touches[0].clientX - startX)
-      console.log(alreadyMoved)
       if (result > 100) {
         return 80
       } else if (result > -600) {
@@ -67,7 +65,7 @@ export default function Projects () {
     })
   }
 
-  function mouseUp (e) {
+  function mouseUp(e) {
     setPointerEvents(true)
     document.removeEventListener('touchmove', touchMove)
     document.removeEventListener('mousemove', mouseMove)
