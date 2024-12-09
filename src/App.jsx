@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
-import Aboutme from './elements/aboutme'
-import Presentation from './elements/presentation'
-import Projects from './elements/projects'
-import Footer from './elements/footer'
-import Technology from './elements/technology'
-import Header from './elements/header'
+import Aboutme from './components/aboutme'
+import Presentation from './components/presentation'
+import ProjectsContainer from './components/projects-container'
+import Footer from './components/footer'
+import Technology from './components/technology'
+import Header from './components/header'
 
 function App () {
   const [loading, setLoading] = useState(true)
@@ -47,13 +47,13 @@ function App () {
 
   return (
     <>
-      {loading
+      {
+      loading
         ? <div className="loading-container">
           <div style={loadingAnimation} className="loading"></div>
         </div>
-        : (
-            ''
-          )}
+        : ''
+      }
       <Header />
       <main>
         <Presentation
@@ -63,7 +63,7 @@ function App () {
           }}
         />
         <Aboutme />
-        <Projects />
+        <ProjectsContainer />
         <Technology />
       </main>
       <Footer />

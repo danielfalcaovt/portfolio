@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { allTechnologies } from '../data/technologies'
 import ScrollReveal from 'scrollreveal'
 
-export default function Technology() {
+export default function Technology () {
   useEffect(() => {
     for (const tech of allTechnologies) {
       ScrollReveal().reveal(`.card${tech.id}`, {
