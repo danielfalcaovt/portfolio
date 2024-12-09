@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal'
-import * as allProjects from '../data/projects'
+import { allProjects } from '../data/projects'
 
 export default function ProjectsCarrosel () {
   const [alreadyMoved, setAlreadyMoved] = useState(0)
