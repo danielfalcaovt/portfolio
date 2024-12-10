@@ -1,3 +1,11 @@
+@import url('./aboutme.css');
+@import url('./footer.css');
+@import url('./navbar.css');
+@import url('./projects.css');
+@import url('./presentation.css');
+@import url('./technology.css');
+@import url('./projects-modal.css');
+
 @font-face {
   font-family: 'Work Sans';
   src: url('../fonts/WorkSans-VariableFont_wght.ttf');
