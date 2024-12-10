@@ -124,24 +124,6 @@ export default function ProjectsCarrosel () {
                 </p>
               </a>
             </div>
-            <div className="project-anchor">
-              {project.video && (
-                <div className="project-video">
-                  <a
-                    href={project.video}
-                    rel="noreferrer"
-                    target="_blank"
-                    aria-label="project video"
-                  >
-                    <img
-                      title="Showcase Video"
-                      src="/assets/youtube.png"
-                      alt="youtube"
-                    />
-                  </a>
-                </div>
-              )}
-            </div>
           </div>
         )
       })}
