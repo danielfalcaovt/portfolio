@@ -5,7 +5,7 @@ header {
   align-items: center;
   z-index: 20;
   height: 15vh;
-  width: 100vw;
+  width: 100%;
   pointer-events: none;
   top: 0px;
 }
