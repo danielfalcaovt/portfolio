@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal'
 import { allProjects } from '../data/projects'
+import { ModalContext } from '../contexts/modal-context'
 
-export default function ProjectsCarrosel (props) {
+export default function ProjectsCarrosel () {
   const [alreadyMoved, setAlreadyMoved] = useState(0)
+  const { setModalProperties } = useContext(ModalContext)
 
   useEffect(() => {
     ScrollReveal().reveal('#projects-title>h1', {
@@ -73,7 +75,7 @@ export default function ProjectsCarrosel (props) {
 
   function openModal (e, project) {
     e.preventDefault()
-    props.setModalProperties({
+    setModalProperties({
       visible: true,
       props: project
     })
@@ -96,6 +98,10 @@ export default function ProjectsCarrosel (props) {
         return (
           <div key={project.id} className={'project-box'}>
             <div
+              rel="noreferrer"
+              onClick={(e) => {
+                openModal(e, project)
+              }}
               style={{
                 background: `#08000D url('./assets/${project.bg}') no-repeat left center/cover`
               }}
@@ -104,7 +110,6 @@ export default function ProjectsCarrosel (props) {
               <a
                 title={project.name}
                 rel="noreferrer"
-                onClick={(e) => { openModal(e, project) }}
                 target="_blank"
                 href={project.link}
                 className="project-about"

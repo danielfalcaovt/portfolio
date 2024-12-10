@@ -6,12 +6,17 @@ import ProjectsContainer from './components/projects-container'
 import Footer from './components/footer'
 import Technology from './components/technology'
 import Header from './components/header'
+import ProjectsModal from './elements/projects-modal'
+import { ModalContext } from './contexts/modal-context'
 
 function App () {
   const [loading, setLoading] = useState(true)
   const [loadingAnimation, setLoadingAnimation] = useState({})
   const [presentationEffect, setPresEffect] = useState({ x: 0, y: 0 })
-
+  const [modalProperties, setModalProperties] = useState({
+    visible: false,
+    props: {}
+  })
   function mouseMove (e) {
     let x, y
     if (e.clientX > document.querySelector('#root').clientWidth / 2) {
@@ -46,15 +51,22 @@ function App () {
   }, [])
 
   return (
-    <>
-      {
-      loading
-        ? <div className="loading-container">
+    <ModalContext.Provider value={{ modalProperties, setModalProperties }}>
+      {loading
+        ? (
+        <div className="loading-container">
           <div style={loadingAnimation} className="loading"></div>
         </div>
-        : ''
-      }
+          )
+        : (
+            ''
+          )}
       <Header />
+      {modalProperties.visible && (
+        <ProjectsModal
+          {...modalProperties.props}
+        />
+      )}
       <main>
         <Presentation
           onMouseMove={mouseMove}
@@ -67,7 +79,7 @@ function App () {
         <Technology />
       </main>
       <Footer />
-    </>
+    </ModalContext.Provider>
   )
 }
 
