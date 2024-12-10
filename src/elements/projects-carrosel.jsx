@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal'
 import { allProjects } from '../data/projects'
 
-export default function ProjectsCarrosel () {
+export default function ProjectsCarrosel (props) {
   const [alreadyMoved, setAlreadyMoved] = useState(0)
 
   useEffect(() => {
@@ -70,6 +71,14 @@ export default function ProjectsCarrosel () {
     document.removeEventListener('touchend', mouseUp)
   }
 
+  function openModal (e, project) {
+    e.preventDefault()
+    props.setModalProperties({
+      visible: true,
+      props: project
+    })
+  }
+
   useEffect(() => {
     setAlreadyMoved(dragStyle)
   }, [dragStyle])
@@ -95,6 +104,7 @@ export default function ProjectsCarrosel () {
               <a
                 title={project.name}
                 rel="noreferrer"
+                onClick={(e) => { openModal(e, project) }}
                 target="_blank"
                 href={project.link}
                 className="project-about"
