@@ -8,9 +8,9 @@ export default function VideoButton (props) {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
-        width="256"
-        height="256"
-        viewBox="0 0 256 256"
+        width="50"
+        height="50"
+        viewBox="0 0 50 50"
         xmlSpace="preserve"
       >
         <defs></defs>
