@@ -62,11 +62,10 @@ function App () {
             ''
           )}
       <Header />
-      {modalProperties.visible && (
-        <ProjectsModal
-          {...modalProperties.props}
-        />
-      )}
+      <ProjectsModal
+        project={modalProperties.props}
+        style={{ opacity: modalProperties.visible ? 1 : 0, pointerEvents: modalProperties.visible ? 'all' : 'none' }}
+      />
       <main>
         <Presentation
           onMouseMove={mouseMove}

@@ -6,10 +6,10 @@ import DeployButton from './buttons/deploy-button'
 import CloseButton from './buttons/close-button'
 import { ModalContext } from '../contexts/modal-context'
 
-export default function ProjectsModal (project) {
+export default function ProjectsModal (props) {
   const { setModalProperties } = useContext(ModalContext)
   return (
-    <div className="project-modal">
+    <div className="project-modal" style={props.style}>
       <CloseButton
         onClick={() => {
           setModalProperties({
@@ -19,16 +19,16 @@ export default function ProjectsModal (project) {
         }}
       />
       <div className="project-modal-header">
-        <img src={`./assets/${project.bg}`} alt="project showcase image" />
+        <img src={`./assets/${props.project.bg}`} alt="project showcase image" />
       </div>
       <div className="project-modal-main">
         <div className="project-modal-content">
-          <span>{project.type}</span>
-          <h1>{project.name}</h1>
-          <p>{project.description}</p>
+          <span>{props.project.type}</span>
+          <h1>{props.project.name}</h1>
+          <p>{props.project.description}</p>
         </div>
         <div className="project-technologies">
-          {project.technologies.map((tech) => {
+          {props.project.technologies?.map((tech) => {
             return (
               <img
                 key={tech}
@@ -39,19 +39,19 @@ export default function ProjectsModal (project) {
           })}
         </div>
         <div className="project-modal-nav">
-          {project.video && (
+          {props.project.video && (
             <button className="project-modal-btn-video project-button">
-              <VideoButton link={project.video} />
+              <VideoButton link={props.project.video} />
             </button>
           )}
-          {project.github && (
+          {props.project.github && (
             <button className="project-modal-btn-github project-button">
-              <GithubButton link={project.github} />
+              <GithubButton link={props.project.github} />
             </button>
           )}
-          {project.deploy && (
+          {props.project.deploy && (
             <button className="project-modal-btn-deploy project-button">
-              <DeployButton link={project.deploy} />
+              <DeployButton link={props.project.deploy} />
             </button>
           )}
         </div>
