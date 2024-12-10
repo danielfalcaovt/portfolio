@@ -4,6 +4,7 @@ import React from 'react'
 export default function CloseButton (props) {
   return (
       <svg
+        className='close-button'
         onClick={props.onClick}
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -10,7 +10,7 @@ export default function DeployButton (props) {
         version="1.1"
         width="50"
         height="50"
-        viewBox="0 0 50 50"
+        viewBox="-20 -20 300 300"
         xmlSpace="preserve"
       >
         <defs></defs>
