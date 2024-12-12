@@ -81,3 +81,12 @@ html::-webkit-scrollbar {
 main {
   perspective: 2460px;
 }
+
+svg {
+  opacity: 85%;
+  transition: all 0.3s;
+}
+
+svg:hover {
+  transform: scale(1.1);
+}

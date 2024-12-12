@@ -63,15 +63,6 @@ footer #footer-foot h1 {
   height: 50px;
 }
 
-svg {
-  opacity: 85%;
-  transition: all 0.3s;
-}
-
-svg:hover {
-  transform: scale(1.1);
-}
-
 @media screen and (max-width: 900px) {
   footer #footer-foot h1 {
     font-size: 0.7rem;

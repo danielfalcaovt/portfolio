@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function DeployButton (props) {
   return (
-      <button {...props} className="btn-github">
+      <a href={props.link} target='_blank' rel='noreferrer' className="btn-github">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -63,6 +63,6 @@ export default function DeployButton (props) {
           </g>
         </svg>
         <span>View in Deploy</span>
-      </button>
+      </a>
   )
 }

@@ -1,3 +1,10 @@
+/*
+  Todos os dados inseridos aqui são automaticamente
+  renderizados no componente projects-carrosel.jsx
+*/
+
+// LIMITE DE CARACTERES PARA O CAMPO: DESCRIPTION
+
 export const allProjects = [
   {
     id: 1,
@@ -35,7 +42,7 @@ export const allProjects = [
     github: 'https://github.com/danielfalcaovt/TaskManager',
     technologies: ['react', 'postgresql', 'typescript'],
     description:
-      'O TaskPilot é um aplicativo de organização pessoal que ajuda a gerenciar tarefas, compromissos e notas. Ele oferece um calendário para visualizar e atribuir tarefas, uma caixa de notificações para lembretes e uma frase motivacional diária. O app também permite personalizar configurações e manter o controle de responsabilidades, visando aumentar a produtividade e simplificar a vida do usuário.'
+      'O TaskPilot é um app de organização pessoal que ajuda a gerenciar tarefas, compromissos e notas. Ele oferece calendário, notificações de lembretes, frases motivacionais diárias e personalização de configurações, visando aumentar a produtividade e facilitar o controle das responsabilidades.'
   },
   {
     id: 4,
