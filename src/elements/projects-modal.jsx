@@ -19,12 +19,17 @@ export default function ProjectsModal (props) {
         }}
       />
       <div className="project-modal-header">
-        <img src={`./assets/${props.project.bg}`} alt="project showcase image" />
+        <img
+          src={`./assets/${props.project.bg}`}
+          alt="project showcase image"
+        />
+        <div>
+          <span>{props.project.type}</span>
+          <h1>{props.project.name}</h1>
+        </div>
       </div>
       <div className="project-modal-main">
         <div className="project-modal-content">
-          <span>{props.project.type}</span>
-          <h1>{props.project.name}</h1>
           <p>{props.project.description}</p>
         </div>
         <div className="project-technologies">
@@ -45,9 +50,10 @@ export default function ProjectsModal (props) {
             </button>
           )}
           {props.project.github && (
-            <button className="project-modal-btn-github project-button">
-              <GithubButton link={props.project.github} />
-            </button>
+              <GithubButton
+                link={props.project.github}
+                className="project-modal-btn-github project-button"
+              />
           )}
           {props.project.deploy && (
             <button className="project-modal-btn-deploy project-button">
