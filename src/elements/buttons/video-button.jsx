@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function VideoButton (props) {
   return (
-    <a rel="noreferrer" target="_blank" href={props.link} aria-label="video">
+    <button {...props} className="btn-github">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="50"
-        height="50"
+        width="16"
+        height="16"
         viewBox="0 0 24 24"
         fill="none"
       >
@@ -21,6 +21,7 @@ export default function VideoButton (props) {
         />
         <polygon points="10,8 16,12 10,16" fill="black" />
       </svg>
-    </a>
+      <span>Watch a Video</span>
+    </button>
   )
 }
