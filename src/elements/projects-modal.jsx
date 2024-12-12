@@ -23,43 +23,43 @@ export default function ProjectsModal (props) {
           src={`./assets/${props.project.bg}`}
           alt="project showcase image"
         />
-        <div>
-          <span>{props.project.type}</span>
-          <h1>{props.project.name}</h1>
-        </div>
-      </div>
-      <div className="project-modal-main">
-        <div className="project-modal-content">
-          <p>{props.project.description}</p>
-        </div>
-        <div className="project-technologies">
-          {props.project.technologies?.map((tech) => {
-            return (
-              <img
-                key={tech}
-                src={`./assets/tech/${tech}.png`}
-                alt={tech}
-              ></img>
-            )
-          })}
-        </div>
         <div className="project-modal-nav">
-          {props.project.video && (
-            <button className="project-modal-btn-video project-button">
-              <VideoButton link={props.project.video} />
-            </button>
-          )}
-          {props.project.github && (
+          <div className="navigation">
+            {props.project.video && (
+              <button className="project-modal-btn-video project-button">
+                <VideoButton link={props.project.video} />
+              </button>
+            )}
+            {props.project.github && (
               <GithubButton
                 link={props.project.github}
                 className="project-modal-btn-github project-button"
               />
-          )}
-          {props.project.deploy && (
-            <button className="project-modal-btn-deploy project-button">
-              <DeployButton link={props.project.deploy} />
-            </button>
-          )}
+            )}
+            {props.project.deploy && (
+              <button className="project-modal-btn-deploy project-button">
+                <DeployButton link={props.project.deploy} />
+              </button>
+            )}
+          </div>
+          <div className="technologies">
+            {props.project.technologies?.map((tech) => {
+              return (
+                <img
+                  key={tech}
+                  src={`./assets/tech/${tech}.png`}
+                  alt={tech}
+                ></img>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="project-modal-main">
+        <div className="project-modal-content">
+          <span>{props.project.type}</span>
+          <h1>{props.project.name}</h1>
+          <p>{props.project.description}</p>
         </div>
       </div>
     </div>

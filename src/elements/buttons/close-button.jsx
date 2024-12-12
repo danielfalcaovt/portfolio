@@ -3,9 +3,8 @@ import React from 'react'
 
 export default function CloseButton (props) {
   return (
+    <button className="close-button" onClick={props.onClick}>
       <svg
-        className='close-button'
-        onClick={props.onClick}
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
@@ -47,5 +46,6 @@ export default function CloseButton (props) {
           />
         </g>
       </svg>
+    </button>
   )
 }

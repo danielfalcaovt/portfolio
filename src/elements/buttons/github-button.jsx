@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function GithubButton (props) {
   return (
-    <button {...props} className="btn-github">
+    <a href={props.link} target='_blank' rel='noreferrer' className="btn-github">
       <svg
         width="16"
         height="16"
@@ -17,6 +17,6 @@ export default function GithubButton (props) {
         ></path>
       </svg>
       <span>View on Github</span>
-    </button>
+    </a>
   )
 }

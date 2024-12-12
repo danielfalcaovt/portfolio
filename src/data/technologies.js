@@ -1,3 +1,8 @@
+/*
+  Todos os dados inseridos aqui são automaticamente
+  renderizados no componente projects-carrosel.jsx
+*/
+
 export const allTechnologies = [
   {
     id: 1,
