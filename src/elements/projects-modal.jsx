@@ -31,10 +31,11 @@ export default function ProjectsModal (props) {
               </button>
             )}
             {props.project.github && (
-              <GithubButton
-                link={props.project.github}
-                className="project-modal-btn-github project-button"
-              />
+              <button className="project-modal-btn-github project-button">
+                <GithubButton
+                  link={props.project.github}
+                />
+              </button>
             )}
             {props.project.deploy && (
               <button className="project-modal-btn-deploy project-button">
