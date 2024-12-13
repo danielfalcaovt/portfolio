@@ -40,6 +40,15 @@ function App () {
     setLoadingAnimation({ transform: 'scale(0)' })
   }
 
+  const closeModalOnClickOutside = (e) => {
+    if (e.target.classList.contains('modal-container')) {
+      setModalProperties({
+        props: {},
+        visible: false
+      })
+    }
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0)
     setTimeout(() => {
@@ -62,10 +71,16 @@ function App () {
             ''
           )}
       <Header />
-      <ProjectsModal
-        project={modalProperties.props}
-        style={{ opacity: modalProperties.visible ? 1 : 0, pointerEvents: modalProperties.visible ? 'all' : 'none' }}
-      />
+      <div
+        className="modal-container"
+        onClick={closeModalOnClickOutside}
+        style={{
+          opacity: modalProperties.visible ? 1 : 0,
+          pointerEvents: modalProperties.visible ? 'all' : 'none'
+        }}
+      >
+        <ProjectsModal project={modalProperties.props} />
+      </div>
       <main>
         <Presentation
           onMouseMove={mouseMove}

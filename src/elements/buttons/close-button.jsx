@@ -8,8 +8,8 @@ export default function CloseButton (props) {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         version="1.1"
-        width="20"
-        height="20"
+        width={window.screen.width > 900 ? '20' : '50'}
+        height={window.screen.width > 900 ? '20' : '50'}
         viewBox="0 0 260 260"
         xmlSpace="preserve"
       >
