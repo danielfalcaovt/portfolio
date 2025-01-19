@@ -8,10 +8,10 @@ export default function Technologies () {
         return (
           <div
             key={tech.id}
-            className={`card card${tech.id}`}
+            className={'card'}
             id="technology-box"
-            style={{ [`--choosencolor${tech.id}`]: tech.color }}
-          >
+            style={{ [`--choosencolor${tech.id}`]: tech.color, background: `linear-gradient( 45deg, var(--choosencolor${tech.id}), var(--choosencolor${tech.id}) )` }}
+            >
             <span></span>
             <div className="content">
               <a
