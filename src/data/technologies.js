@@ -1,6 +1,6 @@
 /*
   Todos os dados inseridos aqui são automaticamente
-  renderizados no componente projects-carrosel.jsx
+  renderizados no componente technologies.jsx
 */
 
 export const allTechnologies = [
@@ -87,5 +87,17 @@ export const allTechnologies = [
     name: 'NestJS',
     img: 'nestjs.png',
     color: '#DF224E'
+  },
+  {
+    id: 15,
+    name: 'Java',
+    img: 'java.png',
+    color: '#FFD600'
+  },
+  {
+    id: 16,
+    name: 'Spring',
+    img: 'spring.png',
+    color: '#42B700'
   }
 ]
