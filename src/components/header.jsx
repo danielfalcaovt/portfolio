@@ -39,7 +39,7 @@ export default function Header () {
               window.location.reload()
             }}
           >
-            DEENE<span>DEV</span>
+            DANIEL<span>DEV</span>
           </h1>
         </div>
         <div id="navbar-link">

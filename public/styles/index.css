@@ -27,8 +27,7 @@
   text-decoration: none;
 }
 
-body,
-#root {
+body {
   overflow-x: hidden;
 }
 
