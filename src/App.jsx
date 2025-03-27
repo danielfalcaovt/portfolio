@@ -107,7 +107,7 @@ function App () {
         <Presentation
           onMouseMove={mouseMove}
           style={{
-            transform: `rotateX(${presentationEffect.y}deg) rotateY(${presentationEffect.x}deg) scale(1.1)`
+            transform: window.screen.width > 900 ? `rotateX(${presentationEffect.y}deg) rotateY(${presentationEffect.x}deg) scale(1.1)` : ''
           }}
         />
         <Aboutme />
