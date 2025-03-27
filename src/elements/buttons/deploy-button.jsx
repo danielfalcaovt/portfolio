@@ -62,7 +62,7 @@ export default function DeployButton (props) {
             />
           </g>
         </svg>
-        <span>View in Deploy</span>
+        <span>Deploy</span>
       </a>
   )
 }

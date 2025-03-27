@@ -10,7 +10,7 @@ export const allProjects = [
     id: 1,
     name: 'TransiScale',
     type: 'API',
-    bg: 'project1.png',
+    bg: 'project1.webp',
     github: 'https://github.com/Debug-Heroes/hackacont-transiscale-front',
     video: 'https://youtu.be/gc0rbUS6ECk',
     technologies: ['nestjs', 'postgresql', 'react'],
@@ -21,7 +21,7 @@ export const allProjects = [
     id: 2,
     name: 'GerenciaBook',
     type: 'API',
-    bg: 'project4.png',
+    bg: 'project4.webp',
     github: 'https://github.com/danielfalcaovt/GerenciaBook-UI',
     technologies: [
       'typescript',
@@ -38,7 +38,7 @@ export const allProjects = [
     id: 3,
     name: 'Task Manager',
     type: 'API',
-    bg: 'project3.png',
+    bg: 'project3.webp',
     github: 'https://github.com/danielfalcaovt/TaskManager',
     technologies: ['react', 'postgresql', 'typescript'],
     description:
@@ -48,11 +48,21 @@ export const allProjects = [
     id: 4,
     name: 'MY BOOKSHELF',
     type: 'Website',
-    bg: 'project2.png',
+    bg: 'project2.webp',
     github: 'https://github.com/danielfalcaovt/my-bookshelf',
     deploy: 'https://minha-bookshelf.vercel.app/',
     technologies: ['javascript', 'react'],
     description:
       'Aqui estão todos os livros que li em todos os meus dias na Terra e o que eu pensei sobre eles. Apenas lembre-se de que eu não sou um avaliador profissional de livros. Sou apenas um desenvolvedor e um cara curioso.'
+  },
+  {
+    id: 5,
+    name: 'ALX SONORIZAÇÃO',
+    type: 'Website',
+    bg: 'project5.webp',
+    deploy: 'https://alxsonorizacao.vercel.app',
+    technologies: ['typescript', 'react'],
+    description:
+      'A ALX Sonorização oferece serviços completos de sonorização, DJ e iluminação para eventos, garantindo alta qualidade de som, mixagens exclusivas e iluminação impressionante, tudo personalizado para tornar seu evento inesquecível.'
   }
 ]

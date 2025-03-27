@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import ProjectsCarrosel from '../elements/projects-carrosel'
 import { ModalContext } from '../contexts/modal-context'
 
