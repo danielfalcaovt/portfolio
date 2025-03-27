@@ -41,11 +41,11 @@ export default function ProjectsCarrosel () {
     setDragStyle(() => {
       const result = alreadyMoved + (e.clientX - startX)
       if (result > 350) {
-        return 320
-      } else if (result > -1200) {
+        return 350
+      } else if (result > -1400) {
         return result
       } else {
-        return -1100
+        return -1400
       }
     })
   }

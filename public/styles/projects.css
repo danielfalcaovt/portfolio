@@ -54,7 +54,7 @@
 }
 
 #projects-carrosel {
-  width: calc(40vw * 4);
+  width: calc(40vw * 5);
   height: 80vh;
   display: flex;
   transition: all 0.3s;

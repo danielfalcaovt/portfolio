@@ -1,3 +1,4 @@
+/* eslint-disable no-return-assign */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
@@ -5,39 +6,40 @@ import React, { useEffect, useState } from 'react'
 
 export default function Presentation (props) {
   const [fullText, setFullText] = useState([])
-  const [bLetterCount, setBLetterC] = useState(-1)
-  const presentationText = 'FALCÃODEV'
+  const [chooseLetter, setChooseLetter] = useState(0)
+  const presentationText = 'DANIELDEV'
 
+  // seta o valor default de todas as letras
   useEffect(() => {
-    for (const i of presentationText) {
-      setFullText((oldValue) => {
-        return [...oldValue, i]
+    const letters = []
+    for (const letter of presentationText) {
+      letters.push({
+        letter,
+        size: 1
       })
     }
+    setFullText(letters)
   }, [])
-
-  function atualizarContexto () {
-    let count = 0
-    setInterval(() => {
-      setBLetterC(-1)
-      const interval = setInterval(() => {
-        if (count < presentationText.length) {
-          setBLetterC((oldValue) => {
-            return oldValue + 1
-          })
-          count++
-        } else {
-          setBLetterC(-1)
-          clearInterval(interval)
-          count = 0
-        }
-      }, 100)
-    }, 2000)
-  }
 
   useEffect(() => {
-    atualizarContexto()
-  }, [])
+    let count = 0
+
+    const interval = setInterval(() => {
+      if (count < fullText.length + 1) {
+        setChooseLetter(count)
+        count++
+      }
+    }, 500) // Aumentei o intervalo para 500ms para permitir tempo para transição
+
+    const countRestart = setInterval(() => {
+      count = 0
+    }, 8000)
+
+    return () => {
+      clearInterval(interval)
+      clearInterval(countRestart)
+    }
+  }, [fullText.length])
 
   return (
     <>
@@ -53,15 +55,17 @@ export default function Presentation (props) {
         }}
         id="presentation"
       >
-        {fullText.map((word, i) => {
+        {fullText.map((letter, index) => {
           return (
             <span
+              key={letter.letter + index} // Use o índice em vez de Math.random() para garantir a estabilidade da chave
               style={{
-                transform: `scale(${i === bLetterCount ? '1.1' : '1'})'})`
+                transform: index === chooseLetter ? 'translateY(-10px) translateX(-10px) rotate(-5deg)' : '',
+                transition: 'transform 0.7s ease, opacity 0.7s ease', // Transição mais suave
+                opacity: chooseLetter === index ? '1' : '0.8'
               }}
-              key={i}
             >
-              {word}
+              {letter.letter}
             </span>
           )
         })}
