@@ -21,7 +21,7 @@ export default function VideoButton (props) {
         />
         <polygon points="10,8 16,12 10,16" fill="black" />
       </svg>
-      <span>Watch a Video</span>
+      <span>Video</span>
     </a>
   )
 }

@@ -16,7 +16,7 @@ export default function GithubButton (props) {
           fill="currentcolor"
         ></path>
       </svg>
-      <span>View on Github</span>
+      <span>Github</span>
     </a>
   )
 }

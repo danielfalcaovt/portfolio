@@ -50,6 +50,28 @@ function App () {
   }
 
   useEffect(() => {
+    // Função que será chamada no evento 'keydown'
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setModalProperties((oldValue) => {
+          return {
+            ...oldValue,
+            visible: false
+          }
+        })
+      }
+    }
+
+    // Adicionando o listener de evento
+    window.addEventListener('keydown', handleKeyDown)
+
+    // Limpando o listener quando o componente for desmontado
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, []) // O array vazio garante que o efeito será executado apenas uma vez
+
+  useEffect(() => {
     window.scrollTo(0, 0)
     setTimeout(() => {
       handleAnimation()
