@@ -60,8 +60,8 @@ export default function Presentation (props) {
             <span
               key={letter.letter + index} // Use o índice em vez de Math.random() para garantir a estabilidade da chave
               style={{
-                transform: index === chooseLetter ? 'translateY(-10px) translateX(-10px) rotate(-5deg)' : '',
-                transition: 'transform 0.7s ease, opacity 0.7s ease', // Transição mais suave
+                transform: index === chooseLetter ? 'translateY(-10px) translateX(-10px) rotate(-5deg)' : 'translate(0px)',
+                transition: 'transform 0.7s ease-out, opacity 0.7s ease', // Transição mais suave
                 opacity: chooseLetter === index ? '1' : '0.8'
               }}
             >
