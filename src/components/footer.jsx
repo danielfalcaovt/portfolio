@@ -39,7 +39,7 @@ export default function Footer () {
           <h1>© {copyrightYear} MIT COPYRIGHT</h1>
         </div>
         <div id='footer-dev'>
-          <h1>DEENEDEV</h1>
+          <h1>DANIELDEV</h1>
         </div>
       </div>
     </footer>
