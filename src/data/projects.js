@@ -7,6 +7,15 @@
 
 export const allProjects = [
   {
+    id: 5,
+    name: 'Fila de Atendimento',
+    type: 'API + Microserviço',
+    bg: 'project5.png',
+    technologies: ['typescript', 'mysql', 'react', 'nodejs', 'express'],
+    description:
+      'O Fila de Atendimento é um sistema que gerencia filas de espera em clínicas. Ele permite que os usuários autêntiquem-se, e gerenciem as filas das clínicas cadastradas. O sistema é dividido em uma API acompanhada de um microserviço: A API possibilita a transferência das pessoas entre as filas, enquanto o microserviço é responsável por sincronizar os dados do banco de dados original com o banco de dados do Fila de Atendimento, capturando os dados mais atualizados, e enviando o histórico de atendimentos ao sistema da empresa no fim do dia.'
+  },
+  {
     id: 1,
     name: 'TransiScale',
     type: 'API',
