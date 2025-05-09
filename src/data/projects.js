@@ -7,13 +7,13 @@
 
 export const allProjects = [
   {
-    id: 5,
+    id: 6,
     name: 'Fila de Atendimento',
-    type: 'API + Microserviço',
-    bg: 'project5.png',
-    technologies: ['typescript', 'mysql', 'react', 'nodejs', 'express'],
+    type: 'Website , API e Microsserviço',
+    bg: 'project6.jpeg',
+    technologies: ['typescript', 'mysql', 'react', 'nodejs', 'sqlserver'],
     description:
-      'O Fila de Atendimento é um sistema que gerencia filas de espera em clínicas. Ele permite que os usuários autêntiquem-se, e gerenciem as filas das clínicas cadastradas. O sistema é dividido em uma API acompanhada de um microserviço: A API possibilita a transferência das pessoas entre as filas, enquanto o microserviço é responsável por sincronizar os dados do banco de dados original com o banco de dados do Fila de Atendimento, capturando os dados mais atualizados, e enviando o histórico de atendimentos ao sistema da empresa no fim do dia.'
+      'O Fila de Atendimento gerencia filas nas clínicas da empresa, permitindo transferências entre filas, destaque do cliente no atendimento e histórico com opção de remarcação. Um microserviço sincroniza dados e envia o histórico diário à empresa.'
   },
   {
     id: 1,
