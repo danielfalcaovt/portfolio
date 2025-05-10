@@ -57,10 +57,10 @@ export default function ProjectsCarrosel () {
       const result = alreadyMoved + (e.touches[0].clientX - startX)
       if (result > 100) {
         return 80
-      } else if (result > -700) {
+      } else if (result > -1200) {
         return result
       } else {
-        return -680
+        return -1180
       }
     })
   }
