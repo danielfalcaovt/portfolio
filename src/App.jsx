@@ -8,6 +8,7 @@ import Technology from './components/technology'
 import Header from './components/header'
 import ProjectsModal from './elements/projects-modal'
 import { ModalContext } from './contexts/modal-context'
+import Contact from './components/contact'
 
 function App () {
   const [loading, setLoading] = useState(true)
@@ -113,6 +114,7 @@ function App () {
         <Aboutme />
         <ProjectsContainer />
         <Technology />
+        <Contact />
       </main>
       <Footer />
     </ModalContext.Provider>

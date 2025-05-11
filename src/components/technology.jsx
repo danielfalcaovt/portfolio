@@ -20,6 +20,7 @@ export default function Technology () {
           <h1>Minhas Ferramentas</h1>
         </div>
         <Technologies />
+        <hr />
       </section>
     </>
   )
