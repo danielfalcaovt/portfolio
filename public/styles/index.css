@@ -6,6 +6,7 @@
 @import url('./presentation.css');
 @import url('./technology.css');
 @import url('./projects-modal.css');
+@import url('./contact.css');
 
 @font-face {
   font-family: 'Work Sans';
@@ -53,6 +54,20 @@ html::-webkit-scrollbar {
   padding: 10px;
 }
 
+section hr {
+  height: 1px;
+  border: 0px;
+  position: absolute;
+  bottom: 0px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.151),
+    transparent
+  );
+  width: 100%;
+}
+
 .button > h1 {
   font-size: 1.3rem;
   font-weight: 300;
@@ -72,7 +87,7 @@ html::-webkit-scrollbar {
 }
 
 .loading {
-  background: transparent url('/favicon.ico') center center/contain;
+  background: transparent url('/assets/falcao-icon.png') center center/contain;
   width: 100px;
   height: 100px;
   transition: all 0.5s;

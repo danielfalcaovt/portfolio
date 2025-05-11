@@ -9,7 +9,7 @@ export const allProjects = [
   {
     id: 6,
     name: 'Fila de Atendimento',
-    type: 'Website , API e Microsserviço',
+    type: 'Website, API e Microsserviço',
     bg: 'project6.jpeg',
     technologies: ['typescript', 'mysql', 'react', 'nodejs', 'sqlserver'],
     description:
