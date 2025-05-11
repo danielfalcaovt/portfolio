@@ -45,8 +45,7 @@ export default function Aboutme () {
           style={{
             backgroundColor: '#18002B',
             backgroundImage: 'url("/deenedev.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center'
+            backgroundSize: 'cover'
           }}
           id="developerphoto"
         ></article>
@@ -59,11 +58,7 @@ export default function Aboutme () {
             </div>
             <div>
               <h2>
-                Olá, sou Daniel Falcão, desenvolvedor fullstack apaixonado por
-                tecnologia. Minha missão é transformar suas ideias em soluções
-                digitais inovadoras, criando aplicações web e sites
-                profissionais que atendem às suas necessidades e superam
-                expectativas.
+                Muito prazer, eu sou Daniel Falcão, um desenvolvedor apaixonado por tecnologia e inovação. Estou sempre em constante busca por novos desafios e oportunidades, que agregam valor ao meu conhecimento e habilidades. Acredito que a tecnologia tem o poder de transformar vidas e estou comprometido em fazer a minha parte para tornar isso uma realidade.
               </h2>
             </div>
           </div>
