@@ -36,7 +36,7 @@ export default function Contact () {
     <section id="contact-container">
       <hr />
       <article id="contact-article">
-        <h1 id="contact-title">Entrar em contato</h1>
+        <h1 id="contact-title">Entre em contato</h1>
         <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
