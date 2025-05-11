@@ -25,20 +25,15 @@ export default function Presentation (props) {
     let count = 0
 
     const interval = setInterval(() => {
-      if (count < fullText.length + 1) {
+      if (count <= fullText.length) {
         setChooseLetter(count)
         count++
+      } else {
+        count = 0 // reinicia a contagem após o texto completo ser exibido
       }
-    }, 500) // Aumentei o intervalo para 500ms para permitir tempo para transição
+    }, 500)
 
-    const countRestart = setInterval(() => {
-      count = 0
-    }, 8000)
-
-    return () => {
-      clearInterval(interval)
-      clearInterval(countRestart)
-    }
+    return () => clearInterval(interval)
   }, [fullText.length])
 
   return (
@@ -55,17 +50,17 @@ export default function Presentation (props) {
         }}
         id="presentation"
       >
-        {fullText.map((letter, index) => {
+        {fullText.map(({ letter }, index) => {
           return (
             <span
-              key={letter.letter + index} // Use o índice em vez de Math.random() para garantir a estabilidade da chave
+              key={letter + index} // Use o índice em vez de Math.random() para garantir a estabilidade da chave
               style={{
                 transform: index === chooseLetter ? 'translateY(-10px) translateX(-10px) rotate(-5deg)' : 'translate(0px)',
                 transition: 'transform 0.7s ease-out, opacity 0.7s ease', // Transição mais suave
                 opacity: chooseLetter === index ? '1' : '0.8'
               }}
             >
-              {letter.letter}
+              {letter}
             </span>
           )
         })}
