@@ -98,7 +98,7 @@ export default function Header () {
                 onClick={(evt) => {
                   evt.preventDefault()
                   document
-                    .querySelector('#contact')
+                    .querySelector('#contact-container')
                     .scrollIntoView({ behavior: 'smooth' })
                 }}
                 rel="noreferrer"
