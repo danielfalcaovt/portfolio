@@ -43,7 +43,7 @@ header {
 }
 
 #navbar-link {
-  width: 300px;
+  width: 50%;
 }
 
 #navbar-link>ul {
@@ -78,13 +78,19 @@ header {
   pointer-events: all;
 }
 
+@media screen and (max-width: 1000px) {
+  #navbar-link {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   #navbar h1 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
   #close-phone-menu {
     position: absolute;
     width: 60px;
