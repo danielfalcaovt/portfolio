@@ -59,7 +59,8 @@
   #developerphoto {
     height: 40%;
     width: 100%;
-    background-position: top center;
+    background-position: center 25%;
+    background-repeat: no-repeat;
   }
   #aboutme-main {
     height: 60%;
