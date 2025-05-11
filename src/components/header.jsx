@@ -92,6 +92,22 @@ export default function Header () {
                 <hr />
               </a>
             </li>
+            <li>
+              <a
+                href="#"
+                onClick={(evt) => {
+                  evt.preventDefault()
+                  document
+                    .querySelector('#contact')
+                    .scrollIntoView({ behavior: 'smooth' })
+                }}
+                rel="noreferrer"
+                aria-label="contact section"
+              >
+                ENTRE EM CONTATO
+                <hr />
+              </a>
+            </li>
           </ul>
         </div>
         <div
