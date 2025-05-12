@@ -12,7 +12,7 @@ export default function Contact () {
 
   async function onSubmit (data) {
     try {
-      await fetch(import.meta.env.VITE_API_URL, {
+      await fetch(import.meta.env.VITE_API_URL + '/receive-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
