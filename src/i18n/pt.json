@@ -1,0 +1,65 @@
+{
+  "translation": {
+    "navbar": {
+      "home": {
+        "label": "Home",
+        "description": "Ir para a página inicial"
+      },
+      "articles": {
+        "label": "Artigos"
+      },
+      "language": {
+        "label": "Linguagem",
+        "description": "Escolha a sua Linguagem"
+      }
+    },
+    "home": {
+      "sections": {
+        "presentation": {
+          "title": "Transformando sua Ideia em Realidade Digital!",
+          "description": "Mais do que criar sistemas, transformamos suas ideias em soluções digitais impactantes, que impulsionam o crescimento, aprimoram a experiência do usuário e geram valor real para a sua empresa no cenário digital atual.",
+          "contact": "Entrar em Contato",
+          "plans": "Ver Planos",
+          "features": {
+            "backendExpertise": "Expertise em backend – projetando arquiteturas seguras, escaláveis e eficientes",
+            "dataStructures": "Estruturas de dados e algoritmos – construindo soluções otimizadas e de fácil manutenção",
+            "fullstackDevelopment": "Desenvolvimento full-stack – integrando frontend e backend de forma perfeita",
+            "projectManagement": "Gerenciamento de projetos – organizando e acompanhando tarefas de desenvolvimento",
+            "problemSolving": "Resolução de problemas – entregando soluções que resolvem desafios reais de negócio",
+            "optimization": "Otimização de sistemas – melhorando performance e manutenção de aplicações existentes",
+            "collaboration": "Colaboração em equipe – trabalhando junto aos stakeholders para garantir qualidade e valor"
+          }
+        }
+      }
+    },
+    "aboutme": {
+      "title": "Daniel Falcão",
+      "pleasure": "Construir sistemas capazes de refletir o valor de uma marca, esta é minha missão."
+    },
+    "portfolio": {
+      "project_0": {
+        "name": "Sistema Gerenciador de Filas",
+        "description": "Sistema gerenciador de filas organiza e administra as filas das clínicas, permitindo transferências de clientes, destaque no atendimento e registro de histórico com possibilidade de remarcação. Um microserviço integra e sincroniza os dados.",
+        "details": "O objetivo deste gerenciador de filas era organizar as filas de atendimento de várias clínicas médicas. Desenvolvido em parceria com uma empresa, ele hoje é utilizado para o gerenciamento de 3 clínicas de saúde ocupacional. Esse sistema utiliza a biblioteca socket.io por baixo dos panos, para garantir uma atualização instântanea na tela aonde a fila está sendo exibida. A exibição da fila utiliza a abordagem POOLING no banco, usando a biblioteca cron, essa abordagem foi utilizada para garantir que os dados estejam atualizados dentro de um X período de tempo definido pelo usuário."
+      },
+      "project1": {
+        "name": "TransiScale",
+        "description": "Ferramenta que auxilia gestores na transição de escalas 6x1 para 4x3, simulando impactos operacionais e sugerindo ajustes automáticos nos turnos. O sistema considera carga horária, folgas obrigatórias e leis trabalhistas, garantindo eficiência, bem-estar dos colaboradores e continuidade das operações.",
+        "details": "O TransiScale foi um sistema que foi desenvolvido durante um campeonato de programação online. O sistema foi desenvolvido em NestJS, aproveitando a facilidade e velocidade do framework para entregar o mais breve possível. O sistema possuia autênticação JWT e criptografia HASH de senha."
+      },
+      "project2": {
+        "name": "GerenciaBook",
+        "description": "Gerenciador de Empréstimo de Livros! Este é um sistema projetado para facilitar o gerenciamento de empréstimos de livros. O sistema permite autenticação de usuários, registro e operações CRUD (Criar, Ler, Atualizar, Excluir) de livros de uma escola."
+      },
+      "project4": {
+        "name": "Bookshelf",
+        "description": "Aqui estão todos os livros que li em todos os meus dias na Terra e o que eu pensei sobre eles. Apenas lembre-se de que eu não sou um avaliador profissional de livros. Sou apenas um desenvolvedor e um cara curioso."
+      },
+      "project5": {
+        "name": "ALX Sonorização",
+        "description": "Landing Page desenvolvida para empresa de sonorização e eventos."
+      },
+      "details": "Ver mais..."
+    }
+  }
+}

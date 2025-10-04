@@ -1,0 +1,65 @@
+{
+  "translation": {
+    "navbar": {
+      "home": {
+        "label": "Home",
+        "description": "Go to home page"
+      },
+      "articles": {
+        "label": "Articles"
+      },
+      "language": {
+        "label": "Language",
+        "description": "Choose your language"
+      }
+    },
+    "home": {
+      "sections": {
+        "presentation": {
+          "title": "We bring your idea to digital reality!",
+          "description": "More than just building systems, we transform your ideas into impactful digital solutions that drive growth, enhance user experiences, and create real value for your company in the modern digital landscape.",
+          "contact": "Contact Us",
+          "plans": "Services",
+          "features": {
+            "backendExpertise": "Backend expertise – designing efficient, secure, and scalable server-side architectures",
+            "dataStructures": "Data structures & algorithms – building optimized and maintainable solutions",
+            "fullstackDevelopment": "Full-stack development – creating seamless integration between frontend and backend",
+            "projectManagement": "Project management – organizing and tracking development tasks efficiently",
+            "problemSolving": "Problem-solving – delivering solutions that solve real business challenges",
+            "optimization": "System optimization – improving performance and maintainability of existing applications",
+            "collaboration": "Team collaboration – working closely with stakeholders to ensure quality and value"
+          }
+        }
+      }
+    },
+    "aboutme": {
+      "title": "Daniel Falcão",
+      "pleasure": "Building systems that can accurately reflect a company's true value."
+    },
+    "portfolio": {
+      "project0": {
+        "name": "Queue Manager System",
+        "description": "Queue manager system organizes and manages the lines of clinics, allowing transfers of clients, highlighting in attendance and history record with possibility of redial. A microservice integrates and synchronizes data.",
+        "details": "The purpose of this queue manager was to organize the attendance lines of various medical clinics. Developed in partnership with a company, it is now used for the management of 3 occupational health clinics. This system uses the socket.io library under the cloths, to ensure an instantaneous update on the screen where the queue is being displayed. The queue view uses the POOLING approach in the database, using the cron library, this approach has been used to ensure that data is updated within a user-defined X time period."
+      },
+      "project1": {
+        "name": "TransiScale",
+        "description": "Tool that assists managers in the transition from 6x1 to 4x3 scales, simulating operational impacts and suggesting automatic adjustments in shifts. The system considers workload, mandatory time off and labor laws, ensuring efficiency, employee welfare and continuity of operations.",
+        "details": "TransiScale was a system that was developed during an online programming competition. The system was developed in NestJS, taking advantage of the ease and speed of the framework to deliver as soon as possible. The system had JWT authentication and password HASH encryption."
+      },
+      "project2": {
+        "name": "GerenciaBook",
+        "description": "Book Loan Manager! This is a system designed to facilitate the management of book loans. The system allows user authentication, registration and CRUD (Create, Read, Update, Delete) operations of a school’s books."
+      },
+      "project4": {
+        "name": "Bookshelf",
+        "description": "Here are all the books I read in all my days on earth and what I thought about them. Just remember that I’m not a professional book reviewer. I’m just a developer and a curious guy."
+      },
+      "project5": {
+        "name": "ALX Sonorização",
+        "description": "Landing Page developed for sound company and events."
+      },
+      "details": "Details..."
+    }
+  }
+}
