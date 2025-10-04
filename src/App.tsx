@@ -11,6 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function App() {
   const [, setForceUpdate] = useState(false);
+  console.log(i18n)
   useEffect(() => {
     const handleLanguageChanged = () => {
       setForceUpdate((prev) => !prev); // força render
