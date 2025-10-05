@@ -8,15 +8,27 @@ import {
   Text,
   Tooltip,
 } from "@mantine/core";
-import type { Project } from "../PortfolioData";
-import { t } from "i18next";
+import { type Project } from "../PortfolioData";
+import i18next, { t } from "i18next";
 import { useDisclosure } from "@mantine/hooks";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+import { useEffect, useState } from "react";
 
 export function ProjectCard(project: Project) {
   const [opened, { open: openModal, close: closeModal }] = useDisclosure();
 
-  const { image, name, description, type, technologies } = project;
+  const { image, name, type, technologies, id } = project;
+
+  const [, setForceUpdate] = useState(false);
+  useEffect(() => {
+    const handleLanguageChanged = () => {
+      setForceUpdate((prev) => !prev); // força render
+    };
+    i18next.on("languageChanged", handleLanguageChanged);
+    return () => {
+      i18next.off("languageChanged", handleLanguageChanged);
+    };
+  }, []);
 
   const technologiesComponents = technologies.map((tech) => (
     <Tooltip label={tech.name}>
@@ -67,7 +79,7 @@ export function ProjectCard(project: Project) {
         >
           <Group justify="apart">
             <Text fz="lg" fw={500}>
-              {name}
+              {t(`portfolio.project${id}.name`)}
             </Text>
 
             <Group gap={5}>
@@ -81,7 +93,7 @@ export function ProjectCard(project: Project) {
             </Group>
           </Group>
           <Text fz="sm" mt="xs">
-            {description}
+            {t(`portfolio.project${id}.description`)}
           </Text>
         </Card.Section>
 

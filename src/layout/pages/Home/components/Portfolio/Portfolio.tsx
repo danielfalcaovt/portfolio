@@ -9,7 +9,7 @@ export function PortfolioCarousel() {
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
   const slides = PortfolioData.map((item) => (
-    <Carousel.Slide key={item.name}>
+    <Carousel.Slide key={item.id}>
       <ProjectCard {...item} />
     </Carousel.Slide>
   ));

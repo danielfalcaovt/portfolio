@@ -37,7 +37,7 @@
       "pleasure": "Construir sistemas capazes de refletir o valor de uma marca, esta é minha missão."
     },
     "portfolio": {
-      "project_0": {
+      "project0": {
         "name": "Sistema Gerenciador de Filas",
         "description": "Sistema gerenciador de filas organiza e administra as filas das clínicas, permitindo transferências de clientes, destaque no atendimento e registro de histórico com possibilidade de remarcação. Um microserviço integra e sincroniza os dados.",
         "details": "O objetivo deste gerenciador de filas era organizar as filas de atendimento de várias clínicas médicas. Desenvolvido em parceria com uma empresa, ele hoje é utilizado para o gerenciamento de 3 clínicas de saúde ocupacional. Esse sistema utiliza a biblioteca socket.io por baixo dos panos, para garantir uma atualização instântanea na tela aonde a fila está sendo exibida. A exibição da fila utiliza a abordagem POOLING no banco, usando a biblioteca cron, essa abordagem foi utilizada para garantir que os dados estejam atualizados dentro de um X período de tempo definido pelo usuário."
@@ -49,15 +49,18 @@
       },
       "project2": {
         "name": "GerenciaBook",
-        "description": "Gerenciador de Empréstimo de Livros! Este é um sistema projetado para facilitar o gerenciamento de empréstimos de livros. O sistema permite autenticação de usuários, registro e operações CRUD (Criar, Ler, Atualizar, Excluir) de livros de uma escola."
+        "description": "Gerenciador de Empréstimo de Livros! Este é um sistema projetado para facilitar o gerenciamento de empréstimos de livros. O sistema permite autenticação de usuários, registro e operações CRUD (Criar, Ler, Atualizar, Excluir) de livros de uma escola.",
+        "details": "O GerenciaBook foi desenvolvido para modernizar a gestão de empréstimos de livros em uma escola pública. O sistema foi criado com autenticação de usuários, controle de acesso por perfil e CRUD completo de livros e alunos. Ele também registra o histórico de empréstimos, devoluções e atrasos, facilitando o acompanhamento do acervo. O backend foi construído em Node.js com TypeScript e PostgreSQL, enquanto o frontend utiliza React. O projeto foi implementado com contêineres Docker e testado com Jest para garantir estabilidade e qualidade do código."
       },
       "project4": {
         "name": "Bookshelf",
-        "description": "Aqui estão todos os livros que li em todos os meus dias na Terra e o que eu pensei sobre eles. Apenas lembre-se de que eu não sou um avaliador profissional de livros. Sou apenas um desenvolvedor e um cara curioso."
+        "description": "Aqui estão todos os livros que li em todos os meus dias na Terra e o que eu pensei sobre eles. Apenas lembre-se de que eu não sou um avaliador profissional de livros. Sou apenas um desenvolvedor e um cara curioso.",
+        "details": "O Bookshelf é um projeto pessoal criado para registrar e compartilhar minhas leituras ao longo do tempo. A aplicação foi construída em React e JavaScript, com foco em uma interface limpa e intuitiva, permitindo organizar livros por categorias, registrar notas pessoais e refletir sobre cada leitura. Além disso, o sistema consome dados de uma API pública de livros para exibir capas e informações adicionais. O design é minimalista e otimizado para uso em dispositivos móveis."
       },
       "project5": {
         "name": "ALX Sonorização",
-        "description": "Landing Page desenvolvida para empresa de sonorização e eventos."
+        "description": "Landing Page desenvolvida para empresa de sonorização e eventos.",
+        "details": "A Landing Page da ALX Sonorização foi criada para apresentar os serviços da empresa de forma profissional e responsiva. Desenvolvida em React com TypeScript, o foco do projeto foi destacar o portfólio de eventos e a identidade visual da marca, utilizando transições suaves e elementos visuais modernos. A página inclui seções de serviços, galeria de fotos e formulário de contato funcional integrado com e-mail. O projeto foi hospedado na Vercel para garantir desempenho e tempo de carregamento otimizados."
       },
       "details": "Ver mais..."
     }

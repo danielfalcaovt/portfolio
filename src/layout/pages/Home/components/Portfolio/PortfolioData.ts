@@ -2,6 +2,7 @@ import type { TechnologyData } from "../AboutMeData";
 import { t } from "i18next";
 
 export interface Project {
+    id: number
     name: string;
     technologies: TechnologyData[];
     image: string;
@@ -31,13 +32,13 @@ const technologiesMap = {
 
 export const PortfolioData: Project[] = [
     {
+        id: 0,
         name: t("portfolio.project0.name"), // Fila de Atendimento
         technologies: [
             technologiesMap.typescript,
             technologiesMap.mysql,
             technologiesMap.react,
-            technologiesMap.nodejs,
-            technologiesMap.sqlserver,
+            technologiesMap.nodejs
         ],
         image: "/images/project6.jpeg",
         description: t("portfolio.project0.description"),
@@ -45,6 +46,7 @@ export const PortfolioData: Project[] = [
         details: t("portfolio.project0.details"),
     },
     {
+        id: 1,
         name: t("portfolio.project1.name"), // TransiScale
         technologies: [
             technologiesMap.nestjs,
@@ -59,6 +61,8 @@ export const PortfolioData: Project[] = [
         video: "https://youtu.be/gc0rbUS6ECk",
     },
     {
+        id:2,
+
         name: t("portfolio.project2.name"), // GerenciaBook
         technologies: [
             technologiesMap.typescript,
@@ -75,6 +79,8 @@ export const PortfolioData: Project[] = [
         github: "https://github.com/danielfalcaovt/GerenciaBook-UI",
     },
     {
+        id:4,
+
         name: t("portfolio.project4.name"), // MY BOOKSHELF
         technologies: [
             technologiesMap.javascript,
@@ -88,6 +94,8 @@ export const PortfolioData: Project[] = [
         deploy: "https://minha-bookshelf.vercel.app/",
     },
     {
+        id: 5,
+
         name: t("portfolio.project5.name"), // ALX SONORIZAÇÃO
         technologies: [
             technologiesMap.typescript,

@@ -49,15 +49,18 @@
       },
       "project2": {
         "name": "GerenciaBook",
-        "description": "Book Loan Manager! This is a system designed to facilitate the management of book loans. The system allows user authentication, registration and CRUD (Create, Read, Update, Delete) operations of a school’s books."
+        "description": "Book Loan Manager! This system was designed to make it easier to manage book loans. It allows user authentication, registration, and CRUD (Create, Read, Update, Delete) operations for a school's book collection.",
+        "details": "GerenciaBook was developed to modernize the book loan management system at a public school. It features user authentication, role-based access control, and complete CRUD operations for books and students. The system also records loan history, returns, and delays, making it easier to track the library inventory. The backend was built with Node.js, TypeScript, and PostgreSQL, while the frontend uses React. The project runs in Docker containers and includes Jest tests to ensure code stability and quality."
       },
       "project4": {
         "name": "Bookshelf",
-        "description": "Here are all the books I read in all my days on earth and what I thought about them. Just remember that I’m not a professional book reviewer. I’m just a developer and a curious guy."
+        "description": "Here are all the books I’ve read throughout my days on Earth and what I thought about them. Just remember, I’m not a professional book reviewer—just a developer and a curious guy.",
+        "details": "Bookshelf is a personal project created to record and share my reading journey over time. Built with React and JavaScript, it features a clean and intuitive interface that lets me organize books by category, add personal notes, and reflect on each read. The app also integrates with a public books API to display covers and additional information. The design is minimalist and fully optimized for mobile use."
       },
       "project5": {
         "name": "ALX Sonorização",
-        "description": "Landing Page developed for sound company and events."
+        "description": "Landing Page developed for a sound and events company.",
+        "details": "The ALX Sonorização landing page was designed to present the company’s services in a professional and responsive way. Built with React and TypeScript, the project focuses on showcasing the brand identity and event portfolio through smooth transitions and modern visuals. The page includes sections for services, a photo gallery, and a functional contact form integrated with email. It’s hosted on Vercel for optimized performance and fast load times."
       },
       "details": "Details..."
     }

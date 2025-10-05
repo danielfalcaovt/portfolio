@@ -18,6 +18,7 @@ import {
 } from "@tabler/icons-react";
 import { SMALLICON } from "../../../../../../configuration/utils/icon";
 import { technologies } from "../../AboutMeData";
+import { t } from "i18next";
 
 export default function ProjectDetailsModal({
   opened,
@@ -37,7 +38,12 @@ export default function ProjectDetailsModal({
   ));
 
   return (
-    <Modal onClose={onClose} opened={opened} size="lg" title={project.name}>
+    <Modal
+      onClose={onClose}
+      opened={opened}
+      size="lg"
+      title={t(`portfolio.project${project.id}.name`)}
+    >
       <Stack>
         <Stack gap={5}>
           <Image src={project.image} alt={project.name} radius="md" />
@@ -50,11 +56,11 @@ export default function ProjectDetailsModal({
           </Group>
         </Stack>
 
-        <Text>{project.description}</Text>
+        <Text> {t(`portfolio.project${project.id}.description`)}</Text>
 
         <Divider label={<IconFileDescription />} variant="dashed" />
 
-        <Text fw={500}>{project.details}</Text>
+        <Text fw={500}> {t(`portfolio.project${project.id}.details`)}</Text>
 
         {(project.github || project.deploy || project.video) && (
           <Divider label={<IconPlayerPlay />} variant="dashed" />
