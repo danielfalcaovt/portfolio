@@ -88,6 +88,35 @@
       },
       "copyright": "Todos os direitos reservados.",
       "description": "Construindo aplicações web totalmente funcionais e acessíveis mais rápido do que nunca"
+    },
+    "pricing": {
+      "title": "Valores dos Planos",
+      "description": "Escolha o plano perfeito para a sua empresa e comece a transformar suas ideias em realidade digital hoje mesmo.",
+      "free": {
+        "title": "Gratuito",
+        "description": "Teve uma ideia brilhante para salvar o mundo? Esse plano é para você!"
+      },
+      "common": {
+        "title": "Pequenos Negócios",
+        "description": "Ideal para pequenas empresas que estão começando sua jornada digital.",
+        "features": {
+          "customDomain": "Domínio personalizado",
+          "emailSupport": "Suporte por e-mail",
+          "basicAnalytics": "Análises básicas",
+          "seoOptimization": "Otimização SEO",
+          "socialMediaIntegration": "Integração com redes sociais"
+        }
+      },
+      "enterprise": {
+        "title": "Corporativo",
+        "description": "Soluções personalizadas para grandes empresas com necessidades específicas.",
+        "features": {
+          "everythingInMedium": "Tudo do plano Comum",
+          "customIntegrations": "Integrações personalizadas",
+          "24x7Support": "Suporte Personalizado",
+          "performanceOptimization": "Otimização de performance"
+        }
+      }
     }
   }
 }

@@ -36,7 +36,7 @@ const data = [
       {
         label: "TransiScale",
         link: "https://www.linkedin.com/posts/contcode_hackacont-inovaaexaeto-tecnologia-activity-7266938783026073601-l6PJ",
-      }
+      },
     ],
   },
   {
@@ -49,7 +49,6 @@ const data = [
     ],
   },
 ];
-
 
 export default function FooterLinks() {
   const theme = useMantineTheme();
@@ -76,9 +75,7 @@ export default function FooterLinks() {
         <Text
           key={idx}
           component="a"
-          onClick={(e) =>
-            window.open(link.link, "_blank")
-          }
+          onClick={(e) => window.open(link.link, "_blank")}
           size="sm"
           style={{
             display: "block",
@@ -229,13 +226,10 @@ export default function FooterLinks() {
             variant="subtle"
             aria-label="github"
             style={{
-              zIndex: 1
+              zIndex: 1,
             }}
             onClick={() =>
-              window.open(
-                "https://www.github.com/danielfalcao.dev/",
-                "_blank"
-              )
+              window.open("https://www.github.com/danielfalcao.dev/", "_blank")
             }
           >
             <IconBrandGithub size={18} stroke={1.5} />

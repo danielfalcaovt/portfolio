@@ -88,6 +88,35 @@
       },
       "copyright": "All rights reserved",
       "description": "Build fully functional accessible web applications faster than ever"
+    },
+    "pricing": {
+      "title": "Pricing Plans",
+      "description": "Choose the plan that best suits your needs and take advantage of our services to elevate your business.",
+      "free": {
+        "title": "Free",
+        "description": "Maybe if you are going to save the world, this plan is for you."
+      },
+      "common": {
+        "title": "Common Business",
+        "description": "Perfect for small to medium-sized businesses looking to establish a strong online presence with essential features and support.",
+        "features": {
+          "customDomain": "Custom Domain",
+          "emailSupport": "E-mail Support",
+          "basicAnalytics": "Basic Analysis",
+          "seoOptimization": "SEO Optimization",
+          "socialMediaIntegration": "Social Media Integration"
+        }
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "Ideal for large enterprises that require comprehensive solutions and dedicated support.",
+        "features": {
+          "everythingInMedium": "Everything in Common Business",
+          "customIntegrations": "Custom Integrations",
+          "24x7Support": "Custom Support",
+          "performanceOptimization": "Performance Optimization"
+        }
+      }
     }
   }
 }
