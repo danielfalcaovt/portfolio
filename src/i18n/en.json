@@ -63,6 +63,31 @@
         "details": "The ALX Sonorização landing page was designed to present the company’s services in a professional and responsive way. Built with React and TypeScript, the project focuses on showcasing the brand identity and event portfolio through smooth transitions and modern visuals. The page includes sections for services, a photo gallery, and a functional contact form integrated with email. It’s hosted on Vercel for optimized performance and fast load times."
       },
       "details": "Details..."
+    },
+    "footer": {
+      "about": {
+        "title": "Sobre",
+        "link0": { "label": "Daniel Falcão" },
+        "link1": { "label": "Portfólio" },
+        "link2": { "label": "LinkedIn" },
+        "link3": { "label": "Contato" }
+      },
+      "project": {
+        "title": "Projeto",
+        "link0": { "label": "Github Repositories" },
+        "link1": { "label": "TransiScale" },
+        "link2": { "label": "Gerenciador de Empréstimos" },
+        "link3": { "label": "Casa do Vinho" }
+      },
+      "community": {
+        "title": "Comunidade",
+        "link0": { "label": "Github Discussions" },
+        "link1": { "label": "Twitter / X" },
+        "link2": { "label": "Newsletter Tech" },
+        "link3": { "label": "Discussões no GitHub" }
+      },
+      "copyright": "All rights reserved",
+      "description": "Build fully functional accessible web applications faster than ever"
     }
   }
 }

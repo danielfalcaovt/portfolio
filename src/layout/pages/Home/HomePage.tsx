@@ -4,9 +4,11 @@ import Navigation from "../../nav/Navigation";
 
 export default function HomePage() {
   return (
-    <AppShell style={{
-      scrollBehavior: 'smooth'
-    }}>
+    <AppShell
+      style={{
+        scrollBehavior: "smooth",
+      }}
+    >
       <AppShell.Header>
         <Navigation />
       </AppShell.Header>
