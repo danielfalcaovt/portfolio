@@ -1,14 +1,8 @@
 import {
     IconBuildings,
   IconCircleCheck,
-  IconCircleDashed,
   IconCookie,
-  IconGauge,
   IconHome,
-  IconSphere,
-  IconSquare,
-  IconTower,
-  IconUser,
 } from "@tabler/icons-react";
 import {
   Badge,
