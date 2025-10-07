@@ -53,7 +53,7 @@ export default function FooterLinks() {
   const theme = useMantineTheme();
   const smallScreen = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
-  const groups = data.map((group, idx) => (
+  const groups = data.map((group) => (
     <div
       key={group.title}
       style={{ width: rem(120), marginRight: theme.spacing.xl }}
@@ -74,7 +74,10 @@ export default function FooterLinks() {
         <Text
           key={idx}
           component="a"
-          onClick={(e) => window.open(link.link, "_blank")}
+          onClick={(e) => {
+            e.preventDefault()
+            window.open(link.link, "_blank");
+          }}
           size="sm"
           style={{
             display: "block",
