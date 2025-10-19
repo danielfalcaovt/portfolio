@@ -13,13 +13,16 @@ import { t } from "i18next";
 import { extraTechnologies, technologies } from "./AboutMeData";
 import { IconCrown } from "@tabler/icons-react";
 import { SMALLICON } from "../../../../configuration/utils/icon";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function AboutMe() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <Box mt={100} h="80vh">
       <Stack align="center" w="100%" h="70%">
         <Stack align="flex-start" justify="center" h="100%">
-          <Group mb={24}>
+          <Group mb={24} wrap="nowrap">
             <Image
               src="./images/me.jpeg"
               w={100}
@@ -30,18 +33,36 @@ export default function AboutMe() {
               bd="3px solid var(--mantine-color-default)"
             />
             <Stack gap={8}>
-              <Title order={1} fw={500} fz={44} lh={1.2} mt="md">
+              <Title
+                order={1}
+                fw={500}
+                fz={isMobile ? 33 : 44}
+                lh={1.2}
+                mt="md"
+              >
                 {t("aboutme.title")}
               </Title>
               <Group>
-                <Badge variant="dot">Fullstack Developer</Badge>
-                <Badge variant="light" bg="indigo.9">
+                <Badge size={isMobile ? "xs" : "lg"} variant="dot">
+                  Fullstack Developer
+                </Badge>
+                <Badge
+                  size={isMobile ? "xs" : "lg"}
+                  variant="light"
+                  bg="indigo.9"
+                >
                   React Enthusiast
                 </Badge>
               </Group>
               <Group>
-                <Badge variant="outline">Coffeeholic</Badge>
-                <Badge variant="light" bg="green.8">
+                <Badge size={isMobile ? "xs" : "lg"} variant="outline">
+                  Coffeeholic
+                </Badge>
+                <Badge
+                  size={isMobile ? "xs" : "lg"}
+                  variant="light"
+                  bg="green.8"
+                >
                   NodeJS Specialist
                 </Badge>
               </Group>
