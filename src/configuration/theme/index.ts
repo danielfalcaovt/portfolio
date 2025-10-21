@@ -40,4 +40,5 @@ export const theme = createTheme({
             },
         },
     },
+    scale: 0.9
 });

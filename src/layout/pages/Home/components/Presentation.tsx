@@ -64,10 +64,31 @@ export function HeroPresentation() {
                 </List>
 
                 <Group mt="xl">
-                  <Button size="md" style={{ flex: 1 }}>
+                  <Button
+                    size="md"
+                    style={{ flex: 1 }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const contactElement = document.querySelector("#contact");
+                      contactElement?.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     {t("home.sections.presentation.contact")}
                   </Button>
-                  <Button size="md" variant="default" style={{ flex: 1 }}>
+                  <Button
+                    size="md"
+                    variant="default"
+                    style={{ flex: 1 }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const plansElement = document.querySelector("#plans");
+                      plansElement?.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     {t("home.sections.presentation.plans")}
                   </Button>
                 </Group>

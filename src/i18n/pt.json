@@ -118,6 +118,14 @@
         }
       }
     },
-    "developing": "Estamos trabalhando aqui ainda! Volte depois..."
+    "developing": "Estamos trabalhando aqui ainda! Volte depois...",
+    "contact-us": {
+      "title": "Entre em Contato",
+      "message": "Envie uma mensagem e entraremos em contato em breve!"
+    },
+    "commons": {
+      "submit": "Enviar",
+      "message": "Envie uma Mensagem"
+    }
   }
 }

@@ -128,7 +128,7 @@ export function PricingCards() {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="lg" py="xl" id="plans">
       <Group justify="center">
         <Badge variant="filled" size="lg">
           GOAT

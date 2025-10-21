@@ -118,6 +118,14 @@
         }
       }
     },
-    "developing": "We are already working here, come back later..."
+    "developing": "We are already working here, come back later...",
+    "contact-us": {
+      "title": "Contact Us",
+      "message": "Send us a message and we’ll get back to you as soon as possible."
+    },
+    "commons": {
+      "submit": "Submit",
+      "message": "Send a Message"
+    }
   }
 }
