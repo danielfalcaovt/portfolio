@@ -21,11 +21,6 @@ export default function ContactUs() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = () => {
-    console.log("Email:", email);
-    console.log("Message:", message);
-  };
-
   return (
     <Box
       mt={100}

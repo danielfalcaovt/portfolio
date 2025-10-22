@@ -46,7 +46,7 @@ export function ArticleCard({ article }: { article: Article }) {
       </Group>
 
       <Text size="sm" c="dimmed">
-        {article.sections[0].content.slice(0, 280)}...
+        {article!.sections![0]!.content!.slice(0, 280)}...
       </Text>
 
       <Button onClick={() => navigate('/articles/' + article.id)} color="blue" fullWidth mt="md" radius="md">
