@@ -6,7 +6,9 @@
         "description": "Go to home page"
       },
       "articles": {
-        "label": "Articles"
+        "label": "Articles",
+        "description": "Here is some programming articles i made",
+        "readmore": "Read more..."
       },
       "language": {
         "label": "Language",

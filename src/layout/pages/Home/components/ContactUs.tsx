@@ -105,7 +105,7 @@ export default function ContactUs() {
               radius="xl"
               variant="outline"
               bg={theme.colors.dark[7]}
-              onClick={handleSubmit}
+              onClick={() => alert('DESATIVADO')}
               style={{
                 paddingInline: 32,
                 transition: "transform 0.1s ease",

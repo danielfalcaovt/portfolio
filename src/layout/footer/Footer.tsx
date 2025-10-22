@@ -75,7 +75,7 @@ export default function FooterLinks() {
           key={idx}
           component="a"
           onClick={(e) => {
-            e.preventDefault()
+            e.preventDefault();
             window.open(link.link, "_blank");
           }}
           size="sm"
@@ -107,6 +107,8 @@ export default function FooterLinks() {
       }}
     >
       <Container
+        size="75%"
+        py="xl"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -165,6 +167,8 @@ export default function FooterLinks() {
       </Container>
 
       <Container
+        size="75%"
+        py="xl"
         style={{
           display: "flex",
           justifyContent: "space-between",

@@ -1,6 +1,7 @@
 import { AppShell } from "@mantine/core";
 import { Outlet } from "react-router";
 import Navigation from "../../nav/Navigation";
+import FooterLinks from "../../footer/Footer";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AppShell.Main mt={80}>
         <Outlet />
       </AppShell.Main>
+      <FooterLinks />
     </AppShell>
   );
 }

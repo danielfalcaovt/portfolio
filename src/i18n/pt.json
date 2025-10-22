@@ -6,7 +6,9 @@
         "description": "Ir para a página inicial"
       },
       "articles": {
-        "label": "Artigos"
+        "label": "Artigos",
+        "description": "Aqui você encontrará alguns artigos de programaçao que eu escrevi!",
+        "readmore": "Ler mais..."
       },
       "language": {
         "label": "Linguagem",
