@@ -42,7 +42,9 @@ export default function AboutMe() {
               >
                 {t("aboutme.title")}
               </Title>
-              <Group>
+              <Stack gap={2}>
+
+              <Group gap={2}>
                 <Badge size={isMobile ? "xs" : "lg"} variant="dot">
                   Fullstack Developer
                 </Badge>
@@ -54,7 +56,7 @@ export default function AboutMe() {
                   React Enthusiast
                 </Badge>
               </Group>
-              <Group>
+              <Group gap={2}>
                 <Badge size={isMobile ? "xs" : "lg"} variant="outline">
                   Coffeeholic
                 </Badge>
@@ -66,6 +68,7 @@ export default function AboutMe() {
                   NodeJS Specialist
                 </Badge>
               </Group>
+              </Stack>
             </Stack>
           </Group>
           <Text maw="400px">{t("aboutme.pleasure")}</Text>
