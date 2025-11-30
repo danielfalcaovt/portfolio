@@ -110,7 +110,7 @@ export function HeroPresentation() {
                 src="./images/heroimg.png"
                 width={376}
                 height={356}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "contain", backgroundSize: 'contain' }}
               />
             </Center>
           </Grid.Col>

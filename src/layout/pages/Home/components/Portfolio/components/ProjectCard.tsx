@@ -71,7 +71,6 @@ export function ProjectCard(project: Project) {
             borderBottom:
               "1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4))",
           }}
-          h={150}
           pl="md"
           pr="md"
           pb="md"
