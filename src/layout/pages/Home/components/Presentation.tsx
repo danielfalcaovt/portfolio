@@ -12,6 +12,7 @@ import {
   Text,
   ThemeIcon,
   Title,
+  SimpleGrid, // <--- Adicionado SimpleGrid aos imports
 } from "@mantine/core";
 import { t } from "i18next";
 import AboutMe from "./AboutMe";
@@ -63,10 +64,15 @@ export function HeroPresentation() {
                   </List.Item>
                 </List>
 
-                <Group mt="xl">
+                {/* ALTERAÇÃO AQUI:
+                   1. Usamos SimpleGrid para controlar o layout responsivo (1 col mobile, 2 cols PC).
+                   2. spacing="md" garante o espaçamento entre os botões.
+                */}
+                <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md" mt="xl">
                   <Button
                     size="md"
-                    style={{ flex: 1 }}
+                    // Altura fixa maior no mobile (54px), automática no PC
+                    h={{ base: 54, md: "auto" }}
                     onClick={(e) => {
                       e.preventDefault();
                       const contactElement = document.querySelector("#contact");
@@ -80,7 +86,8 @@ export function HeroPresentation() {
                   <Button
                     size="md"
                     variant="default"
-                    style={{ flex: 1 }}
+                    // Altura fixa maior no mobile (54px), automática no PC
+                    h={{ base: 54, md: "auto" }}
                     onClick={(e) => {
                       e.preventDefault();
                       const plansElement = document.querySelector("#plans");
@@ -91,7 +98,7 @@ export function HeroPresentation() {
                   >
                     {t("home.sections.presentation.plans")}
                   </Button>
-                </Group>
+                </SimpleGrid>
               </Box>
               <AboutMe />
             </Stack>
@@ -110,7 +117,7 @@ export function HeroPresentation() {
                 src="./images/heroimg.png"
                 width={376}
                 height={356}
-                style={{ objectFit: "contain", backgroundSize: 'contain' }}
+                style={{ objectFit: "contain", backgroundSize: "contain" }}
               />
             </Center>
           </Grid.Col>
